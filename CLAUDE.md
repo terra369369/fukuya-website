@@ -15,6 +15,7 @@ https://fukuya-fs.com — 飲食店専門のSNS・MEOコンサルティング「
 - `styles.css` — スクロールバー等の補助スタイルのみ(ほぼ未使用。主要スタイルはindex.html内)
 - `images/fukuya-logo.png` — ロゴ(168×168px。元の2048px版は必要ならユーザーに確認)
 - `images/ogp.png` — OGP画像(1200×630px)
+- `images/profile-avatar.svg` — 代表プロフィール用の架空男性イラスト(顔写真を使わない方針のため)
 - `robots.txt` / `sitemap.xml` — SEO用。ページを追加したらsitemap.xmlにも追記すること
 
 ### index.html の内部構造

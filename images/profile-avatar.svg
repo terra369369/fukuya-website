@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="代表 寺島久雄のイラスト">
+  <!-- 背景 -->
+  <rect width="200" height="200" fill="#f7f4f0"/>
+  <!-- ジャケット -->
+  <path d="M38,200 C40,168 62,152 100,152 C138,152 160,168 162,200 Z" fill="#1a1a2e"/>
+  <!-- シャツの襟 -->
+  <path d="M88,150 L100,170 L112,150 L105,146 L95,146 Z" fill="#ffffff"/>
+  <!-- 首 -->
+  <rect x="88" y="126" width="24" height="28" rx="9" fill="#eab98c"/>
+  <path d="M88,130 C92,139 108,139 112,130 L112,126 L88,126 Z" fill="#d9a276"/>
+  <!-- 耳 -->
+  <circle cx="58" cy="99" r="8" fill="#eab98c"/>
+  <circle cx="142" cy="99" r="8" fill="#eab98c"/>
+  <!-- 顔 -->
+  <ellipse cx="100" cy="97" rx="40" ry="46" fill="#f2c39a"/>
+  <!-- 髪 -->
+  <path d="M60,97 C58,54 78,40 100,40 C122,40 142,54 140,97 C140,79 132,64 122,60 C112,72 84,70 76,62 C66,68 61,81 60,97 Z" fill="#2b2b33"/>
+  <!-- 眉 -->
+  <path d="M76,87 C81,83 89,83 93,86" stroke="#2b2b33" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M107,86 C111,83 119,83 124,87" stroke="#2b2b33" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- 目 -->
+  <circle cx="84" cy="97" r="3.2" fill="#26262e"/>
+  <circle cx="116" cy="97" r="3.2" fill="#26262e"/>
+  <!-- 鼻 -->
+  <path d="M100,101 C99,107 98,111 96,113" stroke="#d9a276" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- 口元 -->
+  <path d="M88,121 C93,127 107,127 112,121" stroke="#b9805a" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- 胸元のゴールドアクセント -->
+  <rect x="123" y="170" width="12" height="8" fill="#c8a97e"/>
+</svg>
