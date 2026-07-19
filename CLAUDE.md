@@ -14,12 +14,16 @@ https://fukuya-fs.com — 飲食店専門のSNS・MEOコンサルティング「
 - `thanks.html` — フォーム送信後のサンクスページ(Netlifyが `/thanks` で配信)
 - `styles.css` — スクロールバー等の補助スタイルのみ(ほぼ未使用。主要スタイルはindex.html内)
 - `images/fukuya-logo.png` — ロゴ(168×168px。元の2048px版は必要ならユーザーに確認)
+- `images/ogp.png` — OGP画像(1200×630px)
+- `robots.txt` / `sitemap.xml` — SEO用。ページを追加したらsitemap.xmlにも追記すること
 
 ### index.html の内部構造
 
 - **Tailwind CSS を CDN(`cdn.tailwindcss.com`)で読み込み**、`<head>` 内のインラインスクリプトで `tailwind.config` を定義。カスタムカラーは `fukuya-*`(dark / orange / blue など)、アニメーションは float / fadeUp / kenburns
 - **AOS(Animate On Scroll)** をCDNで読み込み、末尾の `<script>` で初期化。スクロールアニメーションは `data-aos` 属性で制御
-- セクション構成(id): `pain` → `worldview` → `pricing` → `spots` → `reasons` → `promises` → `contact`
+- セクション構成(id): `pain` → `worldview` → `pricing` → `spots` → `reasons` → `promises` → `profile` → `faq` → `contact`
+- `<head>` にJSON-LD構造化データが2つ(ProfessionalService と FAQPage)ある。**FAQセクションの文言を変えたらFAQPage JSON-LDも必ず同期させること**(Googleのガイドラインで表示内容と一致が必須)
+- 代表者は寺島久雄(サイト上に公開済み。顔写真は使わない方針)
 - 末尾のインラインJS: AOS初期化とスマホメニュー(`#menu-btn` / `#mobile-menu`)の開閉のみ
 
 ### お問い合わせフォーム(重要)
