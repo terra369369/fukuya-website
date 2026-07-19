@@ -29,7 +29,14 @@ https://fukuya-fs.com — 飲食店専門のSNS・MEOコンサルティング「
 
 ### お問い合わせフォーム(重要)
 
-`#contact` のフォームは **Netlify Forms** を使用(`data-netlify="true"`、honeypot付き、`action="/thanks"`)。ホスティングはNetlify。フォームを編集する際は `name="contact"`、`data-netlify` 属性、hidden の `form-name` フィールドを壊さないこと。
+`#contact` のフォームは **FormSubmit**(formsubmit.co)を使用。送信先は `info@fukuya-fs.com`(Google Workspace)。フォームを編集する際は以下を壊さないこと:
+
+- `action="https://formsubmit.co/info@fukuya-fs.com"`
+- hidden フィールド: `_subject`(メール件名)/ `_next`(送信後リダイレクト先 = thanks.html)/ `_captcha=false` / `_template=table`
+- honeypot: `name="_honey"` の隠し入力欄(スパム対策)
+- 送信者メール欄は `name="email"` のままにする(FormSubmitが自動でReply-Toに設定する)
+
+※ 2026-07-20まではNetlify Formsを使用していたが、フォーム検出が無効でずっと不通だったことが判明し、GitHub Pages移行と同時にFormSubmitへ置き換えた。
 
 ## 開発方法
 
@@ -39,13 +46,15 @@ https://fukuya-fs.com — 飲食店専門のSNS・MEOコンサルティング「
 python -m http.server 8000
 ```
 
-※ Netlify Forms はローカルでは動作しない(送信テストは本番/Netlifyプレビューでのみ可能)。
+※ フォーム(FormSubmit)への実送信テストは本番でのみ行うこと。
 
 ## デプロイ(重要)
 
-GitHub `terra369369/fukuya-website` の **mainブランチにプッシュすると、Netlifyが自動で本番(fukuya-fs.com)にデプロイする**(2026-07-20連携設定済み。ビルドコマンドなし・ルート配信)。つまりmainへのプッシュ=即本番公開。未確認の変更はブランチを切って作業し、プッシュ前に必ずローカルで表示確認すること。
+ホスティングは **GitHub Pages**(リポジトリ `terra369369/fukuya-website`、**公開リポジトリ**、mainブランチ/ルート配信、カスタムドメイン fukuya-fs.com)。**mainにプッシュすると自動で本番に反映される**(通常1〜2分)。つまりmainへのプッシュ=即本番公開。未確認の変更はブランチを切って作業し、プッシュ前に必ずローカルで表示確認すること。
 
-**注意: Netlify無料プランはクレジット制(月300、毎月16日リセット)で、本番デプロイ1回ごとにクレジットを消費する。** 細かいプッシュを繰り返さず、変更をまとめてからプッシュすること(2026-07-20にクレジット枯渇でデプロイ停止が発生した)。同アカウントの他プロジェクト(fukuya-sumaden等)もクレジットを共有している。
+- リポジトリ直下の `CNAME` ファイル(GitHubが自動管理)を削除しないこと
+- DNSはWix管理(ネームサーバー wixdns.net)。メール(MX)はGoogle Workspace — サイト移設時もMXレコードには触れないこと
+- 旧ホスティングはNetlify(2026-07-20まで。クレジット枯渇でデプロイ不能になりGitHub Pagesへ移行した)
 
 ## 既知の問題
 

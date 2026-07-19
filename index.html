@@ -684,9 +684,12 @@
                 <p class="text-sm md:text-base text-gray-500 font-light max-w-lg mx-auto leading-relaxed">今すぐの契約は必要ありません。「とりあえず話だけ聞きたい」「自分のお店に合うか分からない」——そんな段階でも、ぜひご連絡ください。</p>
             </div>
             <div class="bg-white rounded-3xl shadow-2xl border border-blue-50 p-8 md:p-12" data-aos="fade-up" data-aos-delay="100">
-                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks">
-                    <input type="hidden" name="form-name" value="contact">
-                    <p class="hidden"><label>Don't fill this out: <input name="bot-field"></label></p>
+                <form method="POST" action="https://formsubmit.co/info@fukuya-fs.com">
+                    <input type="hidden" name="_subject" value="【Fukuya】サイトからのお問い合わせ">
+                    <input type="hidden" name="_next" value="https://fukuya-fs.com/thanks.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <p class="hidden"><label>Don't fill this out: <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></p>
 
                     <div class="space-y-6">
                         <div>
