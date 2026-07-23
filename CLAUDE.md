@@ -22,9 +22,12 @@ https://fukuya-fs.com — 飲食店専門のSNS・MEOコンサルティング「
 
 - **Tailwind CSS を CDN(`cdn.tailwindcss.com`)で読み込み**、`<head>` 内のインラインスクリプトで `tailwind.config` を定義。カスタムカラーは `fukuya-*`(dark / orange / blue など)、アニメーションは float / fadeUp / kenburns
 - **AOS(Animate On Scroll)** をCDNで読み込み、末尾の `<script>` で初期化。スクロールアニメーションは `data-aos` 属性で制御
-- セクション構成(id): `pain` → `worldview` → `pricing` → `spots` → `reasons` → `promises` → `profile` → `faq` → `contact`
+- セクション構成(id): `pain` → `worldview` → `pricing` → `spots` → `apps` → `reasons` → `promises` → `profile` → `faq` → `contact`
 - `<head>` にJSON-LD構造化データが2つ(ProfessionalService と FAQPage)ある。**FAQセクションの文言を変えたらFAQPage JSON-LDも必ず同期させること**(Googleのガイドラインで表示内容と一致が必須)
 - 代表者は寺島久雄(サイト上に公開済み。顔写真は使わない方針)
+- **対応エリアポリシー(2026-07-23決定):** 撮影・対面を伴うサービス(スタンダードプラン/メニュー・LP制作)は東京都内・神奈川・埼玉・千葉(一部地域は要相談)。ライトプランとアプリ開発は全国オンライン対応。エリア表記はヒーロー・料金カード・スポット注記・FAQ・JSON-LD(areaServed)・プロフィールに分散しているので、変更時はすべて同期させること
+- **アプリ開発の公開価格(2026-07-23決定):** オーダーメイド開発 初期¥300,000〜(税抜・個別見積)/月額運用・保守¥15,000〜(税抜)。自社アプリは「開発中・近日公開」のジャンル予告のみ(詳細・名称はリリースまで非公開)
+- 売りの軸:「毎日最新AIで市場・アルゴリズムを分析する根拠のあるSNS運用」。誇大表現(「必ず伸びる」等)は景表法リスクがあるため使わない
 - 末尾のインラインJS: AOS初期化とスマホメニュー(`#menu-btn` / `#mobile-menu`)の開閉のみ
 
 ### お問い合わせフォーム(重要)
