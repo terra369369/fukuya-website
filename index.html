@@ -135,8 +135,14 @@
             },
             {
                 "@type": "Offer",
-                "itemOffered": { "@type": "Service", "name": "ホームページ（LP）作成（撮影込み）" },
+                "itemOffered": { "@type": "Service", "name": "ホームページ（LP）制作（初回制作費。企画・原稿作成、デザイン・スマホ対応、AI検索（AIO）・SEO・MEO対策一式、公開設定を含む）" },
                 "price": "59800",
+                "priceCurrency": "JPY"
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "LPの維持・管理、メニュー・写真の月次更新（月額）" },
+                "price": "9800",
                 "priceCurrency": "JPY"
             },
             {
@@ -162,7 +168,7 @@
             {
                 "@type": "Question",
                 "name": "料金はいくらですか？",
-                "acceptedAnswer": { "@type": "Answer", "text": "月額プランは、コンサルティング特化のライトプランが月額40,000円（税抜）、撮影から運用まで代行するスタンダードプランが月額59,800円（税抜）です。単品では、メニュー作成（撮影込み）が35,000円（税抜）、ホームページ（LP）作成（撮影込み）が59,800円（税抜）〜となっています。" }
+                "acceptedAnswer": { "@type": "Answer", "text": "月額プランは、コンサルティング特化のライトプランが月額40,000円（税抜）、撮影から運用まで代行するスタンダードプランが月額59,800円（税抜）です。単品では、メニュー作成（撮影込み）が35,000円（税抜）です。ホームページ（LP）制作は初回制作費59,800円（税抜）＋月額9,800円（税抜。サイトの維持・管理、メニュー・写真の月次更新込み）です。" }
             },
             {
                 "@type": "Question",
@@ -483,7 +489,7 @@
                 <p class="text-sm text-gray-500 font-light max-w-lg mx-auto leading-relaxed">月額サブスクとは別に、必要なものだけを単品でご依頼いただけます。</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="max-w-md mx-auto">
                 <!-- メニュー作成 -->
                 <div class="bg-gray-50 border border-gray-100 p-8 flex flex-col" data-aos="fade-up" data-aos-delay="100">
                     <div class="w-12 h-12 bg-fukuya-dark flex items-center justify-center text-xl mb-5">📋</div>
@@ -504,24 +510,94 @@
                     <a href="#contact" class="mt-auto block text-center border border-fukuya-dark text-fukuya-dark px-6 py-3 font-medium tracking-widest text-sm hover:bg-fukuya-dark hover:text-white transition-all">相談・お見積り</a>
                 </div>
 
-                <!-- ホームページ（LP）作成 -->
-                <div class="bg-gray-50 border border-gray-100 p-8 flex flex-col" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-12 h-12 bg-fukuya-dark flex items-center justify-center text-xl mb-5">🌐</div>
+            </div>
+
+            <!-- ホームページ（LP）制作：相場比較 -->
+            <div class="mt-16" data-aos="fade-up">
+                <div class="text-center mb-10">
                     <div class="label-tag text-fukuya-mid tracking-[0.15em] mb-3">LANDING PAGE</div>
-                    <h3 class="text-xl font-bold text-fukuya-dark mb-2" style="letter-spacing:0.04em">ホームページ（LP）作成<span class="text-sm font-normal text-gray-400 ml-1">（撮影込み）</span></h3>
-                    <div class="flex items-center gap-2 mb-4">
-                        <span style="color:#9a8060" class="flex-shrink-0">★</span>
-                        <p class="text-xs text-gray-500 font-light">元・デザイナーが手掛ける高品質クリエイティブ</p>
+                    <h3 class="text-xl md:text-2xl font-bold text-fukuya-dark mb-3" style="letter-spacing:0.05em">ホームページ（LP）制作</h3>
+                    <p class="text-sm text-gray-500 font-light max-w-lg mx-auto leading-relaxed">格安AI制作に近い価格で、制作会社の内容を。</p>
+                </div>
+
+                <!-- 制作費の比較 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+                    <div class="bg-gray-50 border border-gray-100 p-7 md:p-8">
+                        <p class="label-tag text-gray-400 tracking-[0.15em] mb-5">制作費の一般的な価格帯</p>
+                        <ul>
+                            <li class="flex items-baseline justify-between gap-4 border-b border-gray-200 py-3">
+                                <span class="text-sm text-gray-600 font-light flex-shrink-0">制作会社</span>
+                                <span class="text-right">
+                                    <span class="text-sm text-gray-500">30万〜60万円</span>
+                                    <span class="block text-[10px] text-gray-400 font-light">LP平均55.4万円・中央値40万円</span>
+                                </span>
+                            </li>
+                            <li class="flex items-baseline justify-between gap-4 border-b border-gray-200 py-3">
+                                <span class="text-sm text-gray-600 font-light flex-shrink-0">フリーランス</span>
+                                <span class="text-sm text-gray-500 text-right">8万〜15万円</span>
+                            </li>
+                            <li class="flex items-baseline justify-between gap-4 py-3">
+                                <span class="text-sm text-gray-600 font-light flex-shrink-0">AI・テンプレート格安制作</span>
+                                <span class="text-right">
+                                    <span class="text-sm text-gray-500">1万〜5万円</span>
+                                    <span class="block text-[10px] text-gray-400 font-light">※原稿作成・AI検索対策・写真調整は範囲外が通例</span>
+                                </span>
+                            </li>
+                        </ul>
                     </div>
-                    <p class="text-xs text-gray-400 font-light mb-1"><span class="line-through">LP制作の一般相場：100,000〜600,000円</span></p>
-                    <div class="flex items-end gap-1 mb-4">
-                        <span class="text-3xl font-bold text-fukuya-dark" style="letter-spacing:-0.02em">¥59,800<span class="text-xl">～</span></span>
-                        <span class="text-gray-400 font-light text-sm mb-1">（税抜）</span>
+                    <div class="bg-fukuya-dark text-white p-7 md:p-8 flex flex-col relative" data-aos="fade-up" data-aos-delay="100">
+                        <div class="absolute top-6 right-6"><span class="label-tag tracking-[0.15em]" style="color:#c8a97e">FUKUYA</span></div>
+                        <p class="mb-4"><span class="inline-block bg-fukuya-orange text-white text-[10px] font-bold px-2.5 py-1 tracking-wider">制作会社相場の約1/6</span></p>
+                        <p class="text-xs text-gray-400 font-light mb-1">LP制作費（初回のみ）</p>
+                        <div class="flex items-end gap-2 mb-5">
+                            <span class="text-3xl md:text-4xl font-bold text-white" style="letter-spacing:-0.02em">¥59,800</span>
+                            <span class="text-gray-400 font-light text-sm mb-1">（税抜）</span>
+                        </div>
+                        <ul class="space-y-2.5 text-sm flex-grow">
+                            <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light">企画・原稿作成</span></li>
+                            <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light">デザイン・スマホ対応</span></li>
+                            <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light">AI検索（AIO）・SEO・MEO対策一式</span></li>
+                            <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light">公開設定</span></li>
+                        </ul>
                     </div>
-                    <div class="bg-white border border-gray-200 px-4 py-3 text-xs text-gray-600 leading-relaxed mb-6">
-                        💡 <strong class="text-fukuya-dark">撮影込みで相場を大きく下回る価格。</strong>AI活用の制作体制だから
+                </div>
+
+                <!-- 月額の比較 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch mt-6">
+                    <div class="bg-gray-50 border border-gray-100 p-7 md:p-8">
+                        <p class="label-tag text-gray-400 tracking-[0.15em] mb-5">月額費用の一般的な価格帯</p>
+                        <ul>
+                            <li class="flex items-baseline justify-between gap-4 border-b border-gray-200 py-3">
+                                <span class="text-sm text-gray-600 font-light flex-shrink-0">更新作業込みの運用</span>
+                                <span class="text-sm text-gray-500 text-right">月2万〜3万円</span>
+                            </li>
+                            <li class="flex items-baseline justify-between gap-4 py-3">
+                                <span class="text-sm text-gray-600 font-light flex-shrink-0">保守のみ（更新なし）</span>
+                                <span class="text-right">
+                                    <span class="text-sm text-gray-500">月5千〜2万円</span>
+                                    <span class="block text-[10px] text-gray-400 font-light">管理費は平均4.1万円・中央値1.1万円</span>
+                                </span>
+                            </li>
+                        </ul>
                     </div>
-                    <a href="#contact" class="mt-auto block text-center border border-fukuya-dark text-fukuya-dark px-6 py-3 font-medium tracking-widest text-sm hover:bg-fukuya-dark hover:text-white transition-all">相談・お見積り</a>
+                    <div class="bg-fukuya-dark text-white p-7 md:p-8 flex flex-col relative" data-aos="fade-up" data-aos-delay="100">
+                        <div class="absolute top-6 right-6"><span class="label-tag tracking-[0.15em]" style="color:#c8a97e">FUKUYA</span></div>
+                        <p class="mb-4"><span class="inline-block bg-fukuya-orange text-white text-[10px] font-bold px-2.5 py-1 tracking-wider">毎月の更新込みでこの価格</span></p>
+                        <p class="text-xs text-gray-400 font-light mb-1">月額</p>
+                        <div class="flex items-end gap-2 mb-5">
+                            <span class="text-3xl md:text-4xl font-bold text-white" style="letter-spacing:-0.02em">¥9,800</span>
+                            <span class="text-gray-400 font-light text-sm mb-1">/ 月（税抜）</span>
+                        </div>
+                        <ul class="space-y-2.5 text-sm flex-grow">
+                            <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light">サイトの維持・管理</span></li>
+                            <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light">メニュー・写真の月次更新</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-8 text-center">
+                    <a href="#contact" class="inline-block bg-fukuya-orange text-white px-10 py-3.5 font-medium tracking-widest text-sm hover:bg-fukuya-accent transition-all">LP制作を相談する</a>
+                    <p class="mt-4 text-[11px] text-gray-400 font-light">※ 価格はすべて税抜表記です。<br class="md:hidden">※ 相場出典：Web幹事・STOCK SUN等のWeb制作費用調査（2026年）</p>
                 </div>
             </div>
             <p class="mt-8 text-center text-xs font-light text-gray-400" style="letter-spacing:0.08em">※ 撮影を伴うため、対応エリアは東京都内・神奈川・埼玉・千葉となります（一部地域は要相談）。</p>
@@ -703,7 +779,7 @@
                         <span>料金はいくらですか？</span>
                         <span class="text-fukuya-orange flex-shrink-0 text-xl font-light transition-transform group-open:rotate-45">＋</span>
                     </summary>
-                    <p class="mt-3 text-sm text-gray-500 font-light leading-relaxed">月額プランは、コンサルティング特化のライトプランが月額40,000円（税抜）、撮影から運用まで代行するスタンダードプランが月額59,800円（税抜）です。単品では、メニュー作成（撮影込み）が35,000円（税抜）、ホームページ（LP）作成（撮影込み）が59,800円（税抜）〜となっています。</p>
+                    <p class="mt-3 text-sm text-gray-500 font-light leading-relaxed">月額プランは、コンサルティング特化のライトプランが月額40,000円（税抜）、撮影から運用まで代行するスタンダードプランが月額59,800円（税抜）です。単品では、メニュー作成（撮影込み）が35,000円（税抜）です。ホームページ（LP）制作は初回制作費59,800円（税抜）＋月額9,800円（税抜。サイトの維持・管理、メニュー・写真の月次更新込み）です。</p>
                 </details>
                 <details class="group border-b border-gray-200 py-5">
                     <summary class="flex items-center justify-between cursor-pointer font-bold text-sm md:text-base text-fukuya-dark gap-4">
@@ -785,7 +861,7 @@
                                 <option value="plan-light">ライトプランについて相談したい</option>
                                 <option value="plan-standard">スタンダードプランについて相談したい</option>
                                 <option value="spot-menu">メニュー作成について相談したい</option>
-                                <option value="spot-lp">ホームページ（LP）作成について相談したい</option>
+                                <option value="spot-lp">ホームページ（LP）制作について相談したい</option>
                                 <option value="other">その他・まずは話を聞きたい</option>
                             </select>
                         </div>
