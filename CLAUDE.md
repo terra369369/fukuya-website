@@ -62,7 +62,8 @@ python -m http.server 8000
 ホスティングは **GitHub Pages**(リポジトリ `terra369369/fukuya-website`、**公開リポジトリ**、mainブランチ/ルート配信、カスタムドメイン fukuya-fs.com)。**mainにプッシュすると自動で本番に反映される**(通常1〜2分)。つまりmainへのプッシュ=即本番公開。未確認の変更はブランチを切って作業し、プッシュ前に必ずローカルで表示確認すること。
 
 - リポジトリ直下の `CNAME` ファイル(GitHubが自動管理)を削除しないこと
-- DNSはWix管理(ネームサーバー wixdns.net)。メール(MX)はGoogle Workspace — サイト移設時もMXレコードには触れないこと
+- DNSは**Cloudflare管理**(2026-08-02にWixから移管。スマ伝のサブドメイン運用のため)。メール(MX)はGoogle Workspace — MXレコードには触れないこと。本体サイトのA/CNAMEはプロキシOFF(DNS only)のままにすること(GitHub Pagesの証明書更新のため)
+- サブドメイン `sumaden.fukuya-fs.com` = 自社アプリ「スマ伝」(納品書読み取り・原価計算)。別リポジトリ `terra369369/fukuya-smaden`(ローカル: C:\fukuya-smaden、Cloudflare Workers+OpenNext、デプロイは `npm run deploy:cf`)
 - 旧ホスティングはNetlify(2026-07-20まで。クレジット枯渇でデプロイ不能になりGitHub Pagesへ移行した)
 
 ## 既知の問題
