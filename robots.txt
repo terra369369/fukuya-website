@@ -2,4 +2,20 @@ User-agent: *
 Allow: /
 Disallow: /thanks
 
+# AI検索クローラーを明示的に許可(AI検索での引用・推薦のため)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://fukuya-fs.com/sitemap.xml

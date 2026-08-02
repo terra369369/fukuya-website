@@ -17,13 +17,15 @@ https://fukuya-fs.com — 飲食店専門のSNS・MEOコンサルティング「
 - `images/fukuya-logo.png` — ロゴ(168×168px。元の2048px版は必要ならユーザーに確認)
 - `images/ogp.png` — OGP画像(1200×630px)
 - `images/profile-avatar.svg` — 代表プロフィール用の架空男性イラスト(顔写真を使わない方針のため)
-- `robots.txt` / `sitemap.xml` — SEO用。ページを追加したらsitemap.xmlにも追記すること
+- `robots.txt` / `sitemap.xml` — SEO用。ページを追加したらsitemap.xmlにも追記すること。robots.txtはAIクローラー(GPTBot等)を明示許可している
+- `llms.txt` — AI検索(LLM)向けの事業サマリー。**サービス内容・価格を変更したらこのファイルも必ず同期すること**
 
 ### index.html の内部構造
 
 - **Tailwind CSS を CDN(`cdn.tailwindcss.com`)で読み込み**、`<head>` 内のインラインスクリプトで `tailwind.config` を定義。カスタムカラーは `fukuya-*`(dark / orange / blue など)、アニメーションは float / fadeUp / kenburns
 - **AOS(Animate On Scroll)** をCDNで読み込み、末尾の `<script>` で初期化。スクロールアニメーションは `data-aos` 属性で制御
-- セクション構成(id): `pain` → `worldview` → `pricing` → `spots` → `apps` → `reasons` → `promises` → `profile` → `faq` → `contact`
+- セクション構成(id): `pain` → `worldview` → `pricing`(SNSプラン) → `lp`(LP制作。AIO標準搭載の訴求バンドあり) → `apps` → `menu`(メニュー作成) → `reasons` → `promises` → `profile` → `faq` → `contact`。※2026-08-02にサービス順を「SNS→LP→アプリ→メニュー」に再編。旧id `spots` は廃止
+- 世界観の軸: 「IT会社でも広告代理店でもなく、飲食の現場出身」という差別化。ヒーローのバッジ・painセクション末尾・各サービスのキャッチ・プロフィールで一貫させる
 - `<head>` にJSON-LD構造化データが2つ(ProfessionalService と FAQPage)ある。**FAQセクションの文言を変えたらFAQPage JSON-LDも必ず同期させること**(Googleのガイドラインで表示内容と一致が必須)
 - 代表者は寺島久雄(サイト上に公開済み。顔写真は使わない方針)
 - **対応エリアポリシー(2026-07-23決定):** 撮影・対面を伴うサービス(スタンダードプラン/メニュー・LP制作)は東京都内・神奈川・埼玉・千葉(一部地域は要相談)。ライトプランとアプリ開発は全国オンライン対応。エリア表記はヒーロー・料金カード・スポット注記・FAQ・JSON-LD(areaServed)・プロフィールに分散しているので、変更時はすべて同期させること
