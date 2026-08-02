@@ -123,7 +123,7 @@
             },
             {
                 "@type": "Offer",
-                "itemOffered": { "@type": "Service", "name": "スタンダードプラン（撮影・Instagram運用・MEO運用代行）" },
+                "itemOffered": { "@type": "Service", "name": "スタンダードプラン（店舗撮影・Instagram投稿・リール運用代行）" },
                 "price": "59800",
                 "priceCurrency": "JPY"
             },
@@ -136,7 +136,7 @@
             {
                 "@type": "Offer",
                 "itemOffered": { "@type": "Service", "name": "ホームページ（LP）制作（初回制作費。企画・原稿作成、デザイン・スマホ対応、AI検索（AIO）・SEO・MEO対策一式、公開設定を含む）" },
-                "price": "59800",
+                "price": "69800",
                 "priceCurrency": "JPY"
             },
             {
@@ -168,12 +168,12 @@
             {
                 "@type": "Question",
                 "name": "料金はいくらですか？",
-                "acceptedAnswer": { "@type": "Answer", "text": "月額プランは、コンサルティング特化のライトプランが月額40,000円（税抜）、撮影から運用まで代行するスタンダードプランが月額59,800円（税抜）です。単品では、メニュー作成（撮影込み）が35,000円（税抜）です。ホームページ（LP）制作は初回制作費59,800円（税抜）＋月額9,800円（税抜。サイトの維持・管理、メニュー・写真の月次更新込み）です。" }
+                "acceptedAnswer": { "@type": "Answer", "text": "月額プランは、コンサルティング特化のライトプランが月額40,000円（税抜）、撮影から運用まで代行するスタンダードプランが月額59,800円（税抜）です。単品では、メニュー作成（撮影込み）が35,000円（税抜）です。ホームページ（LP）制作は初回制作費69,800円（税抜）＋月額9,800円（税抜。サイトの維持・管理、メニュー・写真の月次更新込み）です。" }
             },
             {
                 "@type": "Question",
                 "name": "ライトプランとスタンダードプランの違いは何ですか？",
-                "acceptedAnswer": { "@type": "Answer", "text": "ライトプランは分析レポート・投稿台本のご提案などコンサルティングに特化したプランで、撮影と投稿はお客様ご自身で行っていただきます。スタンダードプランは月2回の店舗撮影、週3回のInstagram投稿・リール運用、MEO情報更新までをすべてFukuyaが代行します。" }
+                "acceptedAnswer": { "@type": "Answer", "text": "ライトプランは分析レポート・投稿台本のご提案などコンサルティングに特化したプランで、撮影と投稿はお客様ご自身で行っていただきます。スタンダードプランは月1〜2回の店舗撮影から週2〜3回のInstagram投稿・リール運用までをFukuyaが代行します。" }
             },
             {
                 "@type": "Question",
@@ -183,7 +183,7 @@
             {
                 "@type": "Question",
                 "name": "撮影はどのように行われますか？",
-                "acceptedAnswer": { "@type": "Answer", "text": "スタンダードプランでは月2回、プロがお店に伺って料理や店内の写真・動画を撮影します。オーナー様側での準備や手間は最小限で構いません。撮影の対応エリアは東京都内・神奈川・埼玉・千葉です（一部地域は要相談）。" }
+                "acceptedAnswer": { "@type": "Answer", "text": "スタンダードプランでは月1〜2回、プロがお店に伺って料理や店内の写真・動画を撮影します。オーナー様側での準備や手間は最小限で構いません。撮影の対応エリアは東京都内・神奈川・埼玉・千葉です（一部地域は要相談）。" }
             },
             {
                 "@type": "Question",
@@ -391,67 +391,91 @@
                     <span class="gold-line"></span>
                 </div>
                 <h2 class="text-2xl md:text-4xl font-bold text-fukuya-dark mb-3" style="letter-spacing:0.05em">月額プラン</h2>
-                <p class="text-sm text-gray-500 font-light max-w-md mx-auto leading-relaxed">コンサルから始めて本格運用へステップアップ。SNS運用・MEO・撮影を個別に外注すれば月10万円を超えるのが一般的——一気通貫だから、この価格で提供できます。</p>
+                <p class="text-sm text-gray-500 font-light max-w-md mx-auto leading-relaxed">コンサルから始めて本格運用へステップアップ。SNS運用と撮影を個別に外注すれば月10万円を超えるのが一般的——一気通貫だから、この価格で提供できます。</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- ライトプラン -->
-                <div class="plan-card bg-white border border-gray-200 p-8 md:p-10 flex flex-col" data-aos="fade-up" data-aos-delay="100">
-                    <div class="mb-6">
-                        <div class="label-tag text-fukuya-mid tracking-[0.18em] mb-3">LIGHT PLAN</div>
-                        <h3 class="text-xl md:text-2xl font-bold text-fukuya-dark mb-1" style="letter-spacing:0.06em">ライトプラン</h3>
-                        <p class="text-xs text-gray-400 font-light tracking-widest">コンサルティング特化（撮影はお客様）</p>
-                        <p class="mt-2 inline-block bg-gray-100 text-gray-600 text-[10px] font-medium px-2.5 py-1 tracking-wider">🌏 全国対応（オンライン完結）</p>
+            <!-- ライトプラン：相場比較 -->
+            <div data-aos="fade-up">
+                <div class="text-center mb-10">
+                    <div class="label-tag text-fukuya-mid tracking-[0.15em] mb-3">LIGHT PLAN</div>
+                    <h3 class="text-xl md:text-2xl font-bold text-fukuya-dark mb-3" style="letter-spacing:0.05em">ライトプラン</h3>
+                    <p class="text-sm text-gray-500 font-light max-w-lg mx-auto leading-relaxed">コンサルティング特化（撮影はお客様）。全国対応・オンライン完結。</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+                    <div class="bg-gray-50 border border-gray-100 p-7 md:p-8">
+                        <p class="label-tag text-gray-400 tracking-[0.15em] mb-5">SNSコンサルの一般的な価格帯</p>
+                        <ul>
+                            <li class="flex items-baseline justify-between gap-4 border-b border-gray-200 py-3">
+                                <span class="text-sm text-gray-600 font-light flex-shrink-0">SNSコンサルティング会社</span>
+                                <span class="text-sm text-gray-500 text-right">月5万〜10万円</span>
+                            </li>
+                            <li class="flex items-baseline justify-between gap-4 py-3">
+                                <span class="text-sm text-gray-600 font-light flex-shrink-0">運用代行まで依頼した場合</span>
+                                <span class="text-sm text-gray-500 text-right">月10万〜30万円</span>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="mb-6 pb-6 border-b border-gray-100">
-                        <p class="text-xs text-gray-400 font-light mb-1"><span class="line-through">SNS・MEOコンサルの一般相場：月50,000〜100,000円</span></p>
-                        <div class="flex items-end gap-2 mb-1">
-                            <span class="text-3xl md:text-4xl font-bold text-fukuya-dark" style="letter-spacing:-0.02em">¥40,000</span>
+                    <div class="bg-fukuya-dark text-white p-7 md:p-8 flex flex-col relative" data-aos="fade-up" data-aos-delay="100">
+                        <div class="absolute top-6 right-6"><span class="label-tag tracking-[0.15em]" style="color:#c8a97e">FUKUYA</span></div>
+                        <p class="mb-4"><span class="inline-block bg-fukuya-orange text-white text-[10px] font-bold px-2.5 py-1 tracking-wider">相場の下限を下回る価格</span></p>
+                        <p class="text-xs text-gray-400 font-light mb-1">月額</p>
+                        <div class="flex items-end gap-2 mb-5">
+                            <span class="text-3xl md:text-4xl font-bold text-white" style="letter-spacing:-0.02em">¥40,000</span>
                             <span class="text-gray-400 font-light text-sm mb-1">/ 月（税抜）</span>
                         </div>
-                        <div class="mt-3 bg-gray-50 border border-gray-100 px-4 py-2.5 text-xs text-gray-600 leading-relaxed">
-                            💡 <strong>相場の下限をさらに下回る価格。</strong>AI分析と直接契約だから実現できます
-                        </div>
+                        <ul class="space-y-2.5 text-sm flex-grow mb-6">
+                            <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light">Instagram &amp; MEO 毎月の分析・改善レポート</span></li>
+                            <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light">プロフィール案の提案</span></li>
+                            <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light">投稿台本の提案（週1本）</span></li>
+                            <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light">月1回のオンラインミーティング</span></li>
+                            <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light">質問対応（週1回まで）</span></li>
+                        </ul>
+                        <a href="#contact" class="mt-auto block text-center border border-white/40 text-white px-6 py-3 font-medium tracking-widest text-sm hover:bg-white hover:text-fukuya-dark transition-all">このプランで相談する</a>
                     </div>
-                    <ul class="space-y-3 flex-grow mb-8 text-sm">
-                        <li class="flex items-start gap-3"><span class="check-gold mt-0.5 flex-shrink-0">✓</span><span class="text-gray-600 font-light leading-relaxed">Instagram &amp; MEO 毎月の<strong class="text-fukuya-dark font-medium">分析・改善レポート</strong></span></li>
-                        <li class="flex items-start gap-3"><span class="check-gold mt-0.5 flex-shrink-0">✓</span><span class="text-gray-600 font-light leading-relaxed"><strong class="text-fukuya-dark font-medium">プロフィール案</strong>の提案</span></li>
-                        <li class="flex items-start gap-3"><span class="check-gold mt-0.5 flex-shrink-0">✓</span><span class="text-gray-600 font-light leading-relaxed"><strong class="text-fukuya-dark font-medium">投稿台本</strong>の提案（週1本）</span></li>
-                        <li class="flex items-start gap-3"><span class="check-gold mt-0.5 flex-shrink-0">✓</span><span class="text-gray-600 font-light leading-relaxed">月1回の<strong class="text-fukuya-dark font-medium">オンラインミーティング</strong></span></li>
-                        <li class="flex items-start gap-3"><span class="check-gold mt-0.5 flex-shrink-0">✓</span><span class="text-gray-600 font-light leading-relaxed">質問対応（週1回まで）</span></li>
-                    </ul>
-                    <a href="#contact" class="block text-center border border-fukuya-dark text-fukuya-dark px-6 py-3.5 font-medium tracking-widest text-sm hover:bg-fukuya-dark hover:text-white transition-all">このプランで相談する</a>
                 </div>
+            </div>
 
-                <!-- スタンダードプラン -->
-                <div class="plan-card bg-fukuya-dark text-white p-8 md:p-10 flex flex-col relative" data-aos="fade-up" data-aos-delay="200">
-                    <div class="absolute top-6 right-6">
-                        <span class="label-tag text-fukuya-orange tracking-[0.15em]">RECOMMENDED</span>
+            <!-- スタンダードプラン：相場比較 -->
+            <div class="mt-16" data-aos="fade-up">
+                <div class="text-center mb-10">
+                    <div class="label-tag text-fukuya-mid tracking-[0.15em] mb-3">STANDARD PLAN</div>
+                    <h3 class="text-xl md:text-2xl font-bold text-fukuya-dark mb-3" style="letter-spacing:0.05em">スタンダードプラン</h3>
+                    <p class="text-sm text-gray-500 font-light max-w-lg mx-auto leading-relaxed">撮影から運用まで、まるごとお任せ。対応エリア：東京都内・神奈川・埼玉・千葉。</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+                    <div class="bg-gray-50 border border-gray-100 p-7 md:p-8">
+                        <p class="label-tag text-gray-400 tracking-[0.15em] mb-5">個別に外注した場合の価格帯</p>
+                        <ul>
+                            <li class="flex items-baseline justify-between gap-4 border-b border-gray-200 py-3">
+                                <span class="text-sm text-gray-600 font-light flex-shrink-0">SNS運用代行（投稿・リール）</span>
+                                <span class="text-sm text-gray-500 text-right">月10万〜30万円</span>
+                            </li>
+                            <li class="flex items-baseline justify-between gap-4 border-b border-gray-200 py-3">
+                                <span class="text-sm text-gray-600 font-light flex-shrink-0">店舗・料理の撮影（単発）</span>
+                                <span class="text-sm text-gray-500 text-right">1回2万〜5万円</span>
+                            </li>
+                            <li class="flex items-baseline justify-between gap-4 py-3">
+                                <span class="text-sm text-gray-600 font-light flex-shrink-0">合計イメージ</span>
+                                <span class="text-sm text-gray-500 text-right">月12万円前後〜</span>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="mb-6">
-                        <div class="label-tag tracking-[0.18em] mb-3" style="color:#c8a97e">STANDARD PLAN</div>
-                        <h3 class="text-xl md:text-2xl font-bold text-white mb-1" style="letter-spacing:0.06em">スタンダードプラン</h3>
-                        <p class="text-xs text-gray-400 font-light tracking-widest">撮影から運用まで、まるごとお任せ</p>
-                        <p class="mt-2 inline-block bg-white/10 text-gray-300 text-[10px] font-medium px-2.5 py-1 tracking-wider">📍 対応エリア：東京都内・神奈川・埼玉・千葉</p>
-                    </div>
-                    <div class="mb-6 pb-6 border-b border-white/10">
-                        <p class="text-xs text-gray-500 font-light mb-1"><span class="line-through">SNS運用・MEO・撮影を個別外注した場合：月150,000円前後</span></p>
-                        <div class="flex items-end gap-2 mb-1">
+                    <div class="bg-fukuya-dark text-white p-7 md:p-8 flex flex-col relative" data-aos="fade-up" data-aos-delay="100">
+                        <div class="absolute top-6 right-6"><span class="label-tag text-fukuya-orange tracking-[0.15em]">RECOMMENDED</span></div>
+                        <p class="mb-4"><span class="inline-block bg-fukuya-orange text-white text-[10px] font-bold px-2.5 py-1 tracking-wider">個別外注の約半額</span></p>
+                        <p class="text-xs text-gray-400 font-light mb-1">月額</p>
+                        <div class="flex items-end gap-2 mb-5">
                             <span class="text-3xl md:text-4xl font-bold text-white" style="letter-spacing:-0.02em">¥59,800</span>
                             <span class="text-gray-400 font-light text-sm mb-1">/ 月（税抜）</span>
                         </div>
-                        <div class="mt-3 bg-white/10 border border-white/20 px-4 py-2.5 text-xs text-gray-200 leading-relaxed">
-                            💡 <strong class="text-white">個別外注の約6割減。</strong>撮影・投稿・MEOまで、まとめて任せられてこの価格
-                        </div>
+                        <ul class="space-y-2.5 text-sm flex-grow mb-6">
+                            <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light">店舗での<strong class="text-white font-medium">写真・動画撮影</strong>（月1〜2回）</span></li>
+                            <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light"><strong class="text-white font-medium">Instagram投稿・リール</strong>の運用代行（週2〜3回）</span></li>
+                            <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light">月1回の<strong class="text-white font-medium">オンラインミーティング</strong></span></li>
+                            <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light">ライトプランの<strong class="text-white font-medium">全内容を包含</strong></span></li>
+                        </ul>
+                        <a href="#contact" class="mt-auto block text-center bg-fukuya-orange text-white px-6 py-3 font-medium tracking-widest text-sm hover:bg-fukuya-accent transition-all">このプランで相談する</a>
                     </div>
-                    <ul class="space-y-3 flex-grow mb-8 text-sm">
-                        <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light leading-relaxed">店舗での<strong class="text-white font-medium">写真・動画撮影</strong>（月２回）</span></li>
-                        <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light leading-relaxed"><strong class="text-white font-medium">Instagram投稿・リール</strong>の運用代行（週３回）</span></li>
-                        <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light leading-relaxed"><strong class="text-white font-medium">MEO情報更新</strong>（週１回）・口コミ管理</span></li>
-                        <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light leading-relaxed">月１回の<strong class="text-white font-medium">オンラインミーティング</strong></span></li>
-                        <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light leading-relaxed">ライトプランの<strong class="text-white font-medium">全内容を包含</strong></span></li>
-                    </ul>
-                    <a href="#contact" class="block text-center bg-fukuya-orange text-white px-6 py-3.5 font-medium tracking-widest text-sm hover:bg-fukuya-accent transition-all">このプランで相談する</a>
                 </div>
             </div>
 
@@ -489,27 +513,46 @@
                 <p class="text-sm text-gray-500 font-light max-w-lg mx-auto leading-relaxed">月額サブスクとは別に、必要なものだけを単品でご依頼いただけます。</p>
             </div>
 
-            <div class="max-w-md mx-auto">
-                <!-- メニュー作成 -->
-                <div class="bg-gray-50 border border-gray-100 p-8 flex flex-col" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-12 h-12 bg-fukuya-dark flex items-center justify-center text-xl mb-5">📋</div>
+            <!-- メニュー作成：相場比較 -->
+            <div data-aos="fade-up">
+                <div class="text-center mb-10">
                     <div class="label-tag text-fukuya-mid tracking-[0.15em] mb-3">MENU DESIGN</div>
-                    <h3 class="text-xl font-bold text-fukuya-dark mb-2" style="letter-spacing:0.04em">メニュー作成<span class="text-sm font-normal text-gray-400 ml-1">（撮影込み）</span></h3>
-                    <div class="flex items-center gap-2 mb-4">
-                        <span style="color:#9a8060" class="flex-shrink-0">★</span>
-                        <p class="text-xs text-gray-500 font-light">元・デザイナーが手掛ける高品質クリエイティブ</p>
-                    </div>
-                    <p class="text-xs text-gray-400 font-light mb-1"><span class="line-through">デザイン＋撮影を外注した場合の相場：70,000円前後〜</span></p>
-                    <div class="flex items-end gap-1 mb-4">
-                        <span class="text-3xl font-bold text-fukuya-dark" style="letter-spacing:-0.02em">¥35,000</span>
-                        <span class="text-gray-400 font-light text-sm mb-1">（税抜）</span>
-                    </div>
-                    <div class="bg-white border border-gray-200 px-4 py-3 text-xs text-gray-600 leading-relaxed mb-6">
-                        💡 <strong class="text-fukuya-dark">撮影込みで相場の約半額。</strong>元・デザイナーが直接制作するから
-                    </div>
-                    <a href="#contact" class="mt-auto block text-center border border-fukuya-dark text-fukuya-dark px-6 py-3 font-medium tracking-widest text-sm hover:bg-fukuya-dark hover:text-white transition-all">相談・お見積り</a>
+                    <h3 class="text-xl md:text-2xl font-bold text-fukuya-dark mb-3" style="letter-spacing:0.05em">メニュー作成<span class="text-sm font-normal text-gray-400 ml-1">（撮影込み）</span></h3>
+                    <p class="text-sm text-gray-500 font-light max-w-lg mx-auto leading-relaxed">元・デザイナーが直接手掛ける、集客に直結するメニュー表。</p>
                 </div>
-
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+                    <div class="bg-gray-50 border border-gray-100 p-7 md:p-8">
+                        <p class="label-tag text-gray-400 tracking-[0.15em] mb-5">メニュー制作の一般的な価格帯</p>
+                        <ul>
+                            <li class="flex items-baseline justify-between gap-4 border-b border-gray-200 py-3">
+                                <span class="text-sm text-gray-600 font-light flex-shrink-0">制作会社に依頼</span>
+                                <span class="text-sm text-gray-500 text-right">5万〜15万円</span>
+                            </li>
+                            <li class="flex items-baseline justify-between gap-4 py-3">
+                                <span class="text-sm text-gray-600 font-light flex-shrink-0">フリーランス・クラウドソーシング</span>
+                                <span class="text-right">
+                                    <span class="text-sm text-gray-500">3万〜7.7万円</span>
+                                    <span class="block text-[10px] text-gray-400 font-light">※撮影は別料金が通例</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-fukuya-dark text-white p-7 md:p-8 flex flex-col relative" data-aos="fade-up" data-aos-delay="100">
+                        <div class="absolute top-6 right-6"><span class="label-tag tracking-[0.15em]" style="color:#c8a97e">FUKUYA</span></div>
+                        <p class="mb-4"><span class="inline-block bg-fukuya-orange text-white text-[10px] font-bold px-2.5 py-1 tracking-wider">撮影込みで相場の約半額</span></p>
+                        <p class="text-xs text-gray-400 font-light mb-1">制作費</p>
+                        <div class="flex items-end gap-2 mb-5">
+                            <span class="text-3xl md:text-4xl font-bold text-white" style="letter-spacing:-0.02em">¥35,000</span>
+                            <span class="text-gray-400 font-light text-sm mb-1">（税抜）</span>
+                        </div>
+                        <ul class="space-y-2.5 text-sm flex-grow mb-6">
+                            <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light">店舗での料理・商品撮影</span></li>
+                            <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light">メニューのデザイン制作</span></li>
+                            <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light">元・デザイナーが直接担当</span></li>
+                        </ul>
+                        <a href="#contact" class="mt-auto block text-center bg-fukuya-orange text-white px-6 py-3 font-medium tracking-widest text-sm hover:bg-fukuya-accent transition-all">相談・お見積り</a>
+                    </div>
+                </div>
             </div>
 
             <!-- ホームページ（LP）制作：相場比較 -->
@@ -550,7 +593,7 @@
                         <p class="mb-4"><span class="inline-block bg-fukuya-orange text-white text-[10px] font-bold px-2.5 py-1 tracking-wider">制作会社相場の約1/6</span></p>
                         <p class="text-xs text-gray-400 font-light mb-1">LP制作費（初回のみ）</p>
                         <div class="flex items-end gap-2 mb-5">
-                            <span class="text-3xl md:text-4xl font-bold text-white" style="letter-spacing:-0.02em">¥59,800</span>
+                            <span class="text-3xl md:text-4xl font-bold text-white" style="letter-spacing:-0.02em">¥69,800</span>
                             <span class="text-gray-400 font-light text-sm mb-1">（税抜）</span>
                         </div>
                         <ul class="space-y-2.5 text-sm flex-grow">
@@ -597,7 +640,7 @@
 
                 <div class="mt-8 text-center">
                     <a href="#contact" class="inline-block bg-fukuya-orange text-white px-10 py-3.5 font-medium tracking-widest text-sm hover:bg-fukuya-accent transition-all">LP制作を相談する</a>
-                    <p class="mt-4 text-[11px] text-gray-400 font-light">※ 価格はすべて税抜表記です。<br class="md:hidden">※ 相場出典：Web幹事・STOCK SUN等のWeb制作費用調査（2026年）</p>
+                    <p class="mt-4 text-[11px] text-gray-400 font-light">※ 価格はすべて税抜表記です。<br class="md:hidden">※ 相場出典：Web幹事・STOCK SUN等のWeb制作費用調査（2026年）ほか、制作会社・クラウドソーシング等の公開料金をもとにした当社調べ</p>
                 </div>
             </div>
             <p class="mt-8 text-center text-xs font-light text-gray-400" style="letter-spacing:0.08em">※ 撮影を伴うため、対応エリアは東京都内・神奈川・埼玉・千葉となります（一部地域は要相談）。</p>
@@ -779,14 +822,14 @@
                         <span>料金はいくらですか？</span>
                         <span class="text-fukuya-orange flex-shrink-0 text-xl font-light transition-transform group-open:rotate-45">＋</span>
                     </summary>
-                    <p class="mt-3 text-sm text-gray-500 font-light leading-relaxed">月額プランは、コンサルティング特化のライトプランが月額40,000円（税抜）、撮影から運用まで代行するスタンダードプランが月額59,800円（税抜）です。単品では、メニュー作成（撮影込み）が35,000円（税抜）です。ホームページ（LP）制作は初回制作費59,800円（税抜）＋月額9,800円（税抜。サイトの維持・管理、メニュー・写真の月次更新込み）です。</p>
+                    <p class="mt-3 text-sm text-gray-500 font-light leading-relaxed">月額プランは、コンサルティング特化のライトプランが月額40,000円（税抜）、撮影から運用まで代行するスタンダードプランが月額59,800円（税抜）です。単品では、メニュー作成（撮影込み）が35,000円（税抜）です。ホームページ（LP）制作は初回制作費69,800円（税抜）＋月額9,800円（税抜。サイトの維持・管理、メニュー・写真の月次更新込み）です。</p>
                 </details>
                 <details class="group border-b border-gray-200 py-5">
                     <summary class="flex items-center justify-between cursor-pointer font-bold text-sm md:text-base text-fukuya-dark gap-4">
                         <span>ライトプランとスタンダードプランの違いは何ですか？</span>
                         <span class="text-fukuya-orange flex-shrink-0 text-xl font-light transition-transform group-open:rotate-45">＋</span>
                     </summary>
-                    <p class="mt-3 text-sm text-gray-500 font-light leading-relaxed">ライトプランは分析レポート・投稿台本のご提案などコンサルティングに特化したプランで、撮影と投稿はお客様ご自身で行っていただきます。スタンダードプランは月2回の店舗撮影、週3回のInstagram投稿・リール運用、MEO情報更新までをすべてFukuyaが代行します。</p>
+                    <p class="mt-3 text-sm text-gray-500 font-light leading-relaxed">ライトプランは分析レポート・投稿台本のご提案などコンサルティングに特化したプランで、撮影と投稿はお客様ご自身で行っていただきます。スタンダードプランは月1〜2回の店舗撮影から週2〜3回のInstagram投稿・リール運用までをFukuyaが代行します。</p>
                 </details>
                 <details class="group border-b border-gray-200 py-5">
                     <summary class="flex items-center justify-between cursor-pointer font-bold text-sm md:text-base text-fukuya-dark gap-4">
@@ -800,7 +843,7 @@
                         <span>撮影はどのように行われますか？</span>
                         <span class="text-fukuya-orange flex-shrink-0 text-xl font-light transition-transform group-open:rotate-45">＋</span>
                     </summary>
-                    <p class="mt-3 text-sm text-gray-500 font-light leading-relaxed">スタンダードプランでは月2回、プロがお店に伺って料理や店内の写真・動画を撮影します。オーナー様側での準備や手間は最小限で構いません。撮影の対応エリアは東京都内・神奈川・埼玉・千葉です（一部地域は要相談）。</p>
+                    <p class="mt-3 text-sm text-gray-500 font-light leading-relaxed">スタンダードプランでは月1〜2回、プロがお店に伺って料理や店内の写真・動画を撮影します。オーナー様側での準備や手間は最小限で構いません。撮影の対応エリアは東京都内・神奈川・埼玉・千葉です（一部地域は要相談）。</p>
                 </details>
                 <details class="group border-b border-gray-200 py-5">
                     <summary class="flex items-center justify-between cursor-pointer font-bold text-sm md:text-base text-fukuya-dark gap-4">
