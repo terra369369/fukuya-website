@@ -16,7 +16,7 @@ https://fukuya-fs.com — 飲食店専門のSNS・MEOコンサルティング「
 - `styles.css` — スクロールバー等の補助スタイルのみ(ほぼ未使用。主要スタイルはindex.html内)
 - `images/fukuya-logo.png` — ロゴ(168×168px。元の2048px版は必要ならユーザーに確認)
 - `images/ogp.png` — OGP画像(1200×630px)
-- `images/profile-avatar.svg` — 代表プロフィール用の架空男性イラスト(顔写真を使わない方針のため)
+- `images/profile-avatar.png` — 代表プロフィール用の男性イラストアイコン(顔写真を使わない方針のため。336×336px、元画像1000pxはユーザーのDownloadsに)
 - `robots.txt` / `sitemap.xml` — SEO用。ページを追加したらsitemap.xmlにも追記すること。robots.txtはAIクローラー(GPTBot等)を明示許可している
 - `llms.txt` — AI検索(LLM)向けの事業サマリー。**サービス内容・価格を変更したらこのファイルも必ず同期すること**
 
