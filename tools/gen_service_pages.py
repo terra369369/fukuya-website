@@ -424,10 +424,9 @@ app_cards_html = "".join(f'''
                     <div class="absolute top-6 right-6"><span class="label-tag text-fukuya-orange tracking-[0.15em]">モニター提供中</span></div>
                     <div class="w-11 h-11 bg-fukuya-orange flex items-center justify-center text-xl mb-4">{e}</div>
                     <h3 class="text-lg font-bold mb-2">自社アプリ「{n}」</h3>
-                    <div class="mt-1 mb-4 rounded-xl border border-white/10 overflow-hidden h-56 bg-[#0b1020]"><img src="images/{img}" alt="{alt}" class="w-full h-full object-cover object-top" loading="lazy" width="600" height="{ih}"></div>
                     <p class="text-xs text-gray-300 font-light leading-relaxed mb-4 flex-grow">{d}</p>
-                    <p class="text-[11px] text-gray-500 mb-3">現在はクライアント店舗向けにモニター提供中。一般提供は準備中です。</p>
-                    <a href="https://{u}/" target="_blank" rel="noopener" class="text-xs text-gray-400 hover:text-white transition tracking-widest">アプリサイト：{u} ↗</a>
+                    <p class="text-[11px] text-gray-500 mb-4">現在はクライアント店舗向けにモニター提供中。一般提供は準備中です。</p>
+                    <div class="rounded-xl border border-white/10 overflow-hidden bg-[#0b1020]"><img src="images/{img}" alt="{alt}" class="w-full h-auto block" loading="lazy" width="600" height="{ih}"></div>
                 </div>''' for e, n, u, d, img, alt, ih in APP_CARDS)
 
 PAGES.append({
