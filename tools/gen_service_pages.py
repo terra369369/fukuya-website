@@ -415,19 +415,20 @@ PAGES.append({
 
 # ---------- アプリ開発
 APP_CARDS = [
-    ("📱", "スマ仕入", "sumaden.fukuya-fs.com", "納品書をスマホで撮るだけ、AIが自動で読み取り・記録。レシピを登録しておけば（手書きレシピの撮影でもOK）、納品書を撮るたびに仕入れ値の変動を反映したレシピごとの最新原価率をリアルタイムに算出し、原価超過のメニューはアラートでお知らせします。"),
-    ("🧾", "スマ売上", "sumauriage.fukuya-fs.com", "レジのない小さなお店のための売上管理アプリ。手書きの売上伝票を営業終わりにスマホで撮るだけで、AIが自動で読み取り、日次・週次・月次の集計から売れ筋ランキング、ABC分析まで自動化します。"),
-    ("🎙️", "スマ棚", "sumadana.fukuya-fs.com", "\"ハンズフリー\"の音声棚卸アプリ。スタッフがマイクに向かって品名と数量を話すだけで、AIが在庫マスタと照合し、棚卸表に自動で記録。月末の棚卸が「話すだけ」に変わります。"),
+    ("📱", "スマ仕入", "sumaden.fukuya-fs.com", "納品書をスマホで撮るだけ、AIが自動で読み取り・記録。レシピを登録しておけば（手書きレシピの撮影でもOK）、納品書を撮るたびに仕入れ値の変動を反映したレシピごとの最新原価率をリアルタイムに算出し、原価超過のメニューはアラートでお知らせします。", "app-sumaden.webp", "スマ仕入のホーム画面（納品書を撮る・今月の集計・業者管理・品目マスタ・レシピ管理）", 1229),
+    ("🧾", "スマ売上", "sumauriage.fukuya-fs.com", "レジのない小さなお店のための売上管理アプリ。手書きの売上伝票を営業終わりにスマホで撮るだけで、AIが自動で読み取り、日次・週次・月次の集計から売れ筋ランキング、ABC分析まで自動化します。", "app-sumauriage.webp", "スマ売上のホーム画面（伝票を撮る・今日の売上・週間・月間・ABC分析・メニュー管理）", 1218),
+    ("🎙️", "スマ棚", "sumadana.fukuya-fs.com", "\"ハンズフリー\"の音声棚卸アプリ。スタッフがマイクに向かって品名と数量を話すだけで、AIが在庫マスタと照合し、棚卸表に自動で記録。月末の棚卸が「話すだけ」に変わります。", "app-sumadana.webp", "スマ棚の棚卸画面（声で数える・業者ごとの在庫一覧）", 1199),
 ]
 app_cards_html = "".join(f'''
                 <div class="bg-fukuya-dark text-white p-7 flex flex-col relative">
                     <div class="absolute top-6 right-6"><span class="label-tag text-fukuya-orange tracking-[0.15em]">モニター提供中</span></div>
                     <div class="w-11 h-11 bg-fukuya-orange flex items-center justify-center text-xl mb-4">{e}</div>
                     <h3 class="text-lg font-bold mb-2">自社アプリ「{n}」</h3>
+                    <div class="mt-1 mb-4 rounded-xl border border-white/10 overflow-hidden h-56 bg-[#0b1020]"><img src="images/{img}" alt="{alt}" class="w-full h-full object-cover object-top" loading="lazy" width="600" height="{ih}"></div>
                     <p class="text-xs text-gray-300 font-light leading-relaxed mb-4 flex-grow">{d}</p>
                     <p class="text-[11px] text-gray-500 mb-3">現在はクライアント店舗向けにモニター提供中。一般提供は準備中です。</p>
                     <a href="https://{u}/" target="_blank" rel="noopener" class="text-xs text-gray-400 hover:text-white transition tracking-widest">アプリサイト：{u} ↗</a>
-                </div>''' for e, n, u, d in APP_CARDS)
+                </div>''' for e, n, u, d, img, alt, ih in APP_CARDS)
 
 PAGES.append({
     "file": "app.html", "short": "アプリ開発", "label": "APP DEVELOPMENT",
