@@ -414,20 +414,28 @@ PAGES.append({
 })
 
 # ---------- アプリ開発
-APP_CARDS = [
-    ("📱", "スマ仕入", "sumaden.fukuya-fs.com", "納品書をスマホで撮るだけ、AIが自動で読み取り・記録。レシピを登録しておけば（手書きレシピの撮影でもOK）、納品書を撮るたびに仕入れ値の変動を反映したレシピごとの最新原価率をリアルタイムに算出し、原価超過のメニューはアラートでお知らせします。", "app-sumaden.webp", "スマ仕入のホーム画面（納品書を撮る・今月の集計・業者管理・品目マスタ・レシピ管理）", 1229),
-    ("🧾", "スマ売上", "sumauriage.fukuya-fs.com", "レジのない小さなお店のための売上管理アプリ。手書きの売上伝票を営業終わりにスマホで撮るだけで、AIが自動で読み取り、日次・週次・月次の集計から売れ筋ランキング、ABC分析まで自動化します。", "app-sumauriage.webp", "スマ売上のホーム画面（伝票を撮る・今日の売上・週間・月間・ABC分析・メニュー管理）", 1218),
-    ("🎙️", "スマ棚", "sumadana.fukuya-fs.com", "\"ハンズフリー\"の音声棚卸アプリ。スタッフがマイクに向かって品名と数量を話すだけで、AIが在庫マスタと照合し、棚卸表に自動で記録。月末の棚卸が「話すだけ」に変わります。", "app-sumadana.webp", "スマ棚の棚卸画面（声で数える・業者ごとの在庫一覧）", 1199),
-]
-app_cards_html = "".join(f'''
-                <div class="bg-fukuya-dark text-white p-7 flex flex-col relative">
-                    <div class="absolute top-6 right-6"><span class="label-tag text-fukuya-orange tracking-[0.15em]">モニター提供中</span></div>
-                    <div class="w-11 h-11 bg-fukuya-orange flex items-center justify-center text-xl mb-4">{e}</div>
-                    <h3 class="text-lg font-bold mb-2">自社アプリ「{n}」</h3>
-                    <p class="text-xs text-gray-300 font-light leading-relaxed mb-4 flex-grow">{d}</p>
-                    <p class="text-[11px] text-gray-500 mb-4">現在はクライアント店舗向けにモニター提供中。一般提供は準備中です。</p>
-                    <div class="rounded-xl border border-white/10 overflow-hidden bg-[#0b1020]"><img src="images/{img}" alt="{alt}" class="w-full h-auto block" loading="lazy" width="600" height="{ih}"></div>
-                </div>''' for e, n, u, d, img, alt, ih in APP_CARDS)
+APP_CARDS = [{'n': 'スマ仕入', 'img': 'app-sumaden.webp', 'h': 1229, 'alt': 'スマ仕入のホーム画面（納品書を撮る・今月の集計・業者管理・品目マスタ・レシピ管理）', 'p1': '納品書をスマホで撮るだけ、AIが自動で読み取り・記録する飲食店向け業務アプリ。レシピを登録しておけば（手書きレシピの撮影でもOK）、納品書を撮るたびに仕入れ値の変動を反映した<strong class="text-white font-medium">レシピごとの最新原価率をリアルタイムに算出</strong>。原価超過のメニューは<strong class="text-white font-medium">アラートでお知らせ</strong>します。', 'p2': '業者ごとの発注額や、品目ごとの仕入単価の変動も一覧で確認でき、「どの業者から何がいくらで入ったか」が迷わず分かります。', 'p3': '"仕入れ値の上昇に気づかず、利益が消えていた"を防ぐ——飲食の現場出身だから作れたツールです。', 'bg': '#101427'}, {'n': 'スマ売上', 'img': 'app-sumauriage.webp', 'h': 1218, 'alt': 'スマ売上のホーム画面（伝票を撮る・今日の売上・週間・月間・ABC分析・メニュー管理）', 'p1': 'レジのない小さなお店のための売上管理アプリ。手書きの売上伝票を営業終わりにスマホで撮るだけ——AIが自動で読み取り、日次・週次・月次の集計から<strong class="text-white font-medium">売れ筋ランキング、ABC分析まで自動化</strong>します。', 'p2': 'ダッシュボードでは前週比・前月比や客単価、パレート図によるABC分析まで確認でき、データはスプレッドシートにも自動連携。"感覚"の店舗経営が"数字"に変わります。', 'p3': '営業終わりの"ノートと電卓"での集計作業をゼロに。どのメニューが売上をつくっているかが見えるから、メニュー改定や仕込み量の判断が変わります。', 'bg': '#101427'}, {'n': 'スマ棚', 'img': 'app-sumadana.webp', 'h': 1199, 'alt': 'スマ棚の棚卸画面（声で数える・業者ごとの在庫一覧）', 'p1': '"ハンズフリー"の音声棚卸アプリ。スタッフがマイクに向かって品名と数量を話すだけで、<strong class="text-white font-medium">AIが在庫マスタと照合し、棚卸表に自動で記録</strong>。在庫を数えながら両手がふさがる、現場のリアルから生まれた設計です。', 'p2': '聞き取った品名はAIが在庫マスタの正式名称に自動で照合するので、言い方が多少ブレても大丈夫。記録と同時にスプレッドシートへ反映され、転記ミスも起きません。', 'p3': '書いて、数えて、また書いて——月末の棚卸が「話すだけ」に変わります。あとからの集計作業もゼロ。', 'bg': '#0a0c10'}]
+ST_LINE = "現在はクライアント店舗向けにモニター提供中。一般提供は準備中です。"
+def _phone(a, ind):
+    return (f'{ind}<div class="mx-auto mb-6 w-full max-w-[250px]">\n'
+            f'{ind}    <div class="rounded-[2rem] bg-[#161616] p-2 shadow-2xl ring-1 ring-white/15">\n'
+            f'{ind}        <div class="rounded-[1.6rem] overflow-hidden" style="background:{a["bg"]}">\n'
+            f'{ind}            <div class="h-7 relative"><div class="absolute top-1.5 left-1/2 -translate-x-1/2 w-16 h-4 bg-black rounded-full"></div></div>\n'
+            f'{ind}            <div class="aspect-[1/2] overflow-hidden"><img src="images/{a["img"]}" alt="{a["alt"]}" class="w-full h-full object-cover object-top" loading="lazy" width="600" height="{a["h"]}"></div>\n'
+            f'{ind}        </div>\n{ind}    </div>\n{ind}</div>\n')
+def _app_card(a):
+    i = "                "
+    return (f'\n{i}<div class="bg-fukuya-dark text-white p-7 flex flex-col relative">\n'
+            f'{i}    <div class="absolute top-6 right-6"><span class="label-tag text-fukuya-orange tracking-[0.15em]">モニター提供中</span></div>\n'
+            f'{i}    <div class="label-tag tracking-[0.15em] mb-2" style="color:#c8a97e">ORIGINAL APP</div>\n'
+            f'{i}    <h3 class="text-lg font-bold mb-5">自社アプリ「{a["n"]}」</h3>\n'
+            + _phone(a, i + "    ") +
+            f'{i}    <p class="text-sm text-gray-300 font-light leading-relaxed mb-4">{a["p1"]}</p>\n'
+            f'{i}    <p class="text-xs text-gray-400 font-light leading-relaxed mb-4">{a["p2"]}</p>\n'
+            f'{i}    <p class="text-xs text-gray-400 font-light leading-relaxed mb-4">{a["p3"]}</p>\n'
+            f'{i}    <p class="mt-auto text-[11px] text-gray-500">{ST_LINE}</p>\n'
+            f'{i}</div>')
+app_cards_html = "".join(_app_card(a) for a in APP_CARDS)
 
 PAGES.append({
     "file": "app.html", "short": "アプリ開発", "label": "APP DEVELOPMENT",
