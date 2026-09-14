@@ -1029,9 +1029,11 @@
                 <form method="POST" action="https://formsubmit.co/info@fukuya-fs.com">
                     <input type="hidden" name="_subject" value="【Fukuya】サイトからのお問い合わせ">
                     <input type="hidden" name="_next" value="https://fukuya-fs.com/thanks.html">
+                    <!-- _captcha=false は維持。この行を外すとFormSubmitはreCAPTCHAが既定で有効になるため、当面はhoneypot(_honey)のみでスパム対策する -->
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_template" value="table">
-                    <p class="hidden"><label>Don't fill this out: <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></p>
+                    <!-- honeypot: 人間には見えず、自動送信ボットが埋めると送信が破棄される -->
+                    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
 
                     <div class="space-y-6">
                         <div>
@@ -1048,13 +1050,17 @@
                         </div>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
-                                <label class="block text-sm font-black text-fukuya-dark mb-2">お名前 <span class="text-fukuya-orange">*</span></label>
-                                <input type="text" name="name" required placeholder="例）福谷 太郎" class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 text-sm font-medium focus:border-fukuya-blue focus:outline-none transition">
+                                <label class="block text-sm font-black text-fukuya-dark mb-2">店舗名 <span class="text-fukuya-orange">*</span></label>
+                                <input type="text" name="店舗名" required placeholder="例）焼鳥 〇〇 赤坂店" class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 text-sm font-medium focus:border-fukuya-blue focus:outline-none transition">
                             </div>
                             <div>
-                                <label class="block text-sm font-black text-fukuya-dark mb-2">店舗名</label>
-                                <input type="text" name="store" placeholder="例）焼鳥 〇〇 赤坂店" class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 text-sm font-medium focus:border-fukuya-blue focus:outline-none transition">
+                                <label class="block text-sm font-black text-fukuya-dark mb-2">エリア・最寄駅 <span class="text-fukuya-orange">*</span></label>
+                                <input type="text" name="エリア" required placeholder="例）東京都渋谷区・恵比寿駅" class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 text-sm font-medium focus:border-fukuya-blue focus:outline-none transition">
                             </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-black text-fukuya-dark mb-2">お名前 <span class="text-fukuya-orange">*</span></label>
+                            <input type="text" name="name" required placeholder="例）福谷 太郎" class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 text-sm font-medium focus:border-fukuya-blue focus:outline-none transition">
                         </div>
                         <div>
                             <label class="block text-sm font-black text-fukuya-dark mb-2">メールアドレス <span class="text-fukuya-orange">*</span></label>
