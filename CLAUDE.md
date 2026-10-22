@@ -25,7 +25,9 @@ https://fukuya-fs.com — 飲食店専門のSNS・MEOコンサルティング「
 
 - **Tailwind CSS を CDN(`cdn.tailwindcss.com`)で読み込み**、`<head>` 内のインラインスクリプトで `tailwind.config` を定義。カスタムカラーは `fukuya-*`(dark / orange / blue など)、アニメーションは float / fadeUp / kenburns
 - **AOS(Animate On Scroll)** をCDNで読み込み、末尾の `<script>` で初期化。スクロールアニメーションは `data-aos` 属性で制御
-- セクション構成(id): `pain` → `worldview` → `pricing`(SNSプラン) → `lp`(LP制作。AIO標準搭載の訴求バンドあり) → `apps` → `menu`(メニュー作成) → `reasons` → `promises` → `profile` → `faq` → `contact`。※2026-08-02にサービス順を「SNS→LP→アプリ→メニュー」に再編。旧id `spots` は廃止
+- セクション構成(id): ヒーロー → `glance`(一目でわかるFukuya: 事業の定義文+料金/経験/エリア/返信目安の4タイル。AI検索経由の訪問者向け、2026-10-22新設) → `pain` → `worldview` → `pricing`(SNSプラン) → `lp`(LP制作。AIO標準搭載の訴求バンドあり) → `apps` → `menu`(メニュー作成) → `reasons` → `promises` → `profile` → `faq` → `contact`(フォーム前に「お問い合わせの流れ」3ステップあり)。※2026-08-02にサービス順を「SNS→LP→アプリ→メニュー」に再編。旧id `spots` は廃止
+- **モバイルファースト(2026-10-22):** スマホ(375px)での不自然な改行を防ぐため、見出し・短文・価格表ラベルは文節ごとに `<span class="inline-block">…</span>` で囲む方針(`h1,h2,h3 { text-wrap: balance }` も併用)。価格表の金額側は `whitespace-nowrap`、ラベル側は折返し可。テキストを編集したら必ず375px幅で確認すること。スマホには固定CTAバー(`#mobile-cta`、スクロール500px以降に表示、`#contact`・フッター表示中は非表示)がある
+- **構造化データ(2026-10-22刷新):** 事業者情報は `@graph` で Organization(ProfessionalService)/Person/WebSite/WebPage を `@id` で連結し、`hasOfferCatalog` に全サービス価格を保持。価格・サービス変更時はここも更新し、WebPageの `dateModified` を更新する
 - 世界観の軸: 「IT会社でも広告代理店でもなく、飲食の現場出身」という差別化。ヒーローのバッジ・painセクション末尾・各サービスのキャッチ・プロフィールで一貫させる
 - `<head>` にJSON-LD構造化データが2つ(ProfessionalService と FAQPage)ある。**FAQセクションの文言を変えたらFAQPage JSON-LDも必ず同期させること**(Googleのガイドラインで表示内容と一致が必須)
 - 代表者は寺島久雄(サイト上に公開済み。顔写真は使わない方針)
@@ -36,7 +38,7 @@ https://fukuya-fs.com — 飲食店専門のSNS・MEOコンサルティング「
 - **スタンダードプランの内容(2026-08-02改定):** 撮影 月1〜2回/Instagram投稿・リール運用代行 週2〜3回/月1回オンラインMTG/ライトプラン全内容包含。**MEO情報更新・口コミ管理はプラン内容から削除済み**(MEOの分析・レポートはライトプラン側に含まれる)。個別外注比較は「SNS運用10〜30万+撮影1回2〜5万=月12万前後〜」ベース
 - **料金の見せ方(2026-08-02統一):** 全サービス(ライト/スタンダード/メニュー/LP)を「左=一般相場の価格帯リスト(グレー)/右=FUKUYA強調カード(黒+ゴールド、バッジ付き)」の比較レイアウトで統一
 - 売りの軸:「毎日最新AIで市場・アルゴリズムを分析する根拠のあるSNS運用」。誇大表現(「必ず伸びる」等)は景表法リスクがあるため使わない
-- 末尾のインラインJS: AOS初期化とスマホメニュー(`#menu-btn` / `#mobile-menu`)の開閉のみ
+- 末尾のインラインJS: AOS初期化、スマホメニュー(`#menu-btn` / `#mobile-menu`)の開閉、スマホ固定CTA(`#mobile-cta`)の表示制御
 
 ### お問い合わせフォーム(重要)
 
@@ -46,6 +48,7 @@ https://fukuya-fs.com — 飲食店専門のSNS・MEOコンサルティング「
 - hidden フィールド: `_subject`(メール件名)/ `_next`(送信後リダイレクト先 = thanks.html)/ `_captcha=false` / `_template=table`
 - honeypot: `name="_honey"` の隠し入力欄(スパム対策)
 - 送信者メール欄は `name="email"` のままにする(FormSubmitが自動でReply-Toに設定する)
+- 項目順(=通知メールの表の順): category → 店舗名(必須) → エリア(必須) → name → email → きっかけ(任意。AI検索経由の流入を計測するため2026-10-22追加) → message。`_honey` はラベルなし・`style="display:none"` の単独input(2026-10-15スパム対策)
 
 ※ 2026-07-20まではNetlify Formsを使用していたが、フォーム検出が無効でずっと不通だったことが判明し、GitHub Pages移行と同時にFormSubmitへ置き換えた。
 

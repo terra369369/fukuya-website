@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>飲食店専門のSNS運用代行・Instagram撮影・MEO対策【東京・都内近郊】| Fukuya Food &amp; SNS Consulting</title>
-    <meta name="description" content="飲食店専門のInstagram運用代行・撮影代行・MEO対策。対応エリアは東京都内・神奈川・埼玉・千葉(コンサル特化のライトプランは全国オンライン対応)。毎日AIで市場を分析する根拠のある運用を月額4万円から。飲食店向けアプリ開発も対応。">
+    <meta name="description" content="飲食店専門(個人店・小規模店歓迎)のInstagram運用代行・店舗撮影・MEO対策・ホームページ(LP)制作・メニュー制作・業務アプリ開発。対応エリアは東京都内・神奈川・埼玉・千葉(ライトプランとアプリ開発は全国オンライン)。飲食の現場20年の代表が、毎日AIで分析する根拠のある運用を月額4万円から。返信は1営業日以内。">
     <meta name="google-site-verification" content="gxhg5hPIbR_9Ll7K0R_ft_jOf_0klA_OyZArO6hz28w" />
     <link rel="canonical" href="https://fukuya-fs.com/">
     <link rel="icon" type="image/png" href="images/fukuya-logo.png">
@@ -13,7 +13,7 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Fukuya Food &amp; SNS Consulting">
     <meta property="og:title" content="飲食店専門のSNS運用代行・Instagram撮影・MEO対策【東京・都内近郊】| Fukuya">
-    <meta property="og:description" content="毎日AIで市場を分析する、根拠のあるSNS運用。撮影から分析まで一気通貫で月額4万円から。東京都内・近郊対応(ライトプランは全国)。まずは無料の店舗デジタル力診断へ。">
+    <meta property="og:description" content="飲食の現場20年の代表が直接担当。毎日AIで市場を分析する根拠のあるSNS運用を、撮影から分析まで一気通貫で月額4万円から。東京都内・近郊対応(ライトプランは全国)。まずは無料の店舗デジタル力診断へ。">
     <meta property="og:url" content="https://fukuya-fs.com/">
     <meta property="og:image" content="https://fukuya-fs.com/images/ogp.png">
     <meta property="og:locale" content="ja_JP">
@@ -94,69 +94,271 @@
         /* FAQ accordion */
         details summary::-webkit-details-marker { display: none; }
         details summary { list-style: none; }
+        /* 日本語の改行最適化: 見出しは行長を均等に、文節は inline-block で途中改行を防ぐ */
+        h1, h2, h3 { text-wrap: balance; }
+        @media (max-width: 640px) {
+            .label-tag { letter-spacing: 0.18em; }
+            .mobile-cta-space { padding-bottom: 4.5rem; }
+        }
     </style>
-    <!-- 構造化データ: 事業者情報 -->
+    <!-- 構造化データ: 事業者情報(Organization / Person / WebSite / WebPage を @graph で連結) -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Fukuya Food & SNS Consulting",
-        "url": "https://fukuya-fs.com/",
-        "logo": "https://fukuya-fs.com/images/fukuya-logo.png",
-        "image": "https://fukuya-fs.com/images/ogp.png",
-        "description": "飲食店専門のInstagram運用代行・撮影代行・MEO対策・アプリ開発。東京都内・近郊を中心に、撮影から分析まで一気通貫でサポート。コンサルティング特化のライトプランとアプリ開発は全国オンライン対応。",
-        "email": "info@fukuya-fs.com",
-        "sameAs": ["https://x.com/terajima_fukuya", "https://note.com/long_clover8311"],
-        "areaServed": ["東京都", "神奈川県", "埼玉県", "千葉県"],
-        "founder": {
-            "@type": "Person",
-            "name": "寺島 久雄",
-            "jobTitle": "代表",
-            "sameAs": ["https://x.com/terajima_fukuya", "https://note.com/long_clover8311"]
-        },
-        "priceRange": "¥35,000 - ¥59,800",
-        "knowsAbout": ["飲食店のInstagram運用", "SNS運用代行", "MEO対策", "店舗撮影", "メニューデザイン", "ランディングページ制作", "飲食店向けアプリ開発", "AIを活用した市場分析"],
-        "makesOffer": [
+        "@graph": [
             {
-                "@type": "Offer",
-                "itemOffered": { "@type": "Service", "name": "ライトプラン（SNS・MEOコンサルティング）" },
-                "price": "40000",
-                "priceCurrency": "JPY"
+                "@type": [
+                    "ProfessionalService",
+                    "Organization"
+                ],
+                "@id": "https://fukuya-fs.com/#organization",
+                "name": "Fukuya Food & SNS Consulting",
+                "alternateName": [
+                    "Fukuya",
+                    "フクヤ",
+                    "Fukuya Food and SNS Consulting"
+                ],
+                "url": "https://fukuya-fs.com/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://fukuya-fs.com/images/fukuya-logo.png"
+                },
+                "image": "https://fukuya-fs.com/images/ogp.png",
+                "description": "東京を拠点に飲食店専門でInstagram運用代行・店舗撮影・MEO対策・ホームページ(LP)制作・メニュー制作・業務アプリ開発を行う個人事業。代表は飲食業界20年(店長・エリアマネージャー・海外出店担当)の寺島久雄。毎日最新のAIで市場とアルゴリズムを分析する「根拠のあるSNS運用」が特長。撮影を伴うサービスは東京都内・神奈川・埼玉・千葉、コンサルティング特化のライトプランとアプリ開発は全国オンライン対応。",
+                "slogan": "飲食店の集客とDXを、AIの力でまるごと支援。",
+                "email": "info@fukuya-fs.com",
+                "sameAs": [
+                    "https://x.com/terajima_fukuya",
+                    "https://note.com/long_clover8311"
+                ],
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressRegion": "東京都",
+                    "addressCountry": "JP"
+                },
+                "areaServed": [
+                    {
+                        "@type": "AdministrativeArea",
+                        "name": "東京都"
+                    },
+                    {
+                        "@type": "AdministrativeArea",
+                        "name": "神奈川県"
+                    },
+                    {
+                        "@type": "AdministrativeArea",
+                        "name": "埼玉県"
+                    },
+                    {
+                        "@type": "AdministrativeArea",
+                        "name": "千葉県"
+                    },
+                    {
+                        "@type": "Country",
+                        "name": "日本",
+                        "description": "ライトプラン(SNS・MEOコンサルティング)とアプリ開発は全国オンライン対応"
+                    }
+                ],
+                "audience": {
+                    "@type": "Audience",
+                    "audienceType": "飲食店のオーナー・店舗経営者(個人店・小規模店を含む)"
+                },
+                "founder": {
+                    "@id": "https://fukuya-fs.com/#person"
+                },
+                "employee": {
+                    "@id": "https://fukuya-fs.com/#person"
+                },
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "contactType": "customer support",
+                    "email": "info@fukuya-fs.com",
+                    "url": "https://fukuya-fs.com/#contact",
+                    "availableLanguage": [
+                        "ja"
+                    ]
+                },
+                "priceRange": "¥35,000〜",
+                "knowsAbout": [
+                    "飲食店のInstagram運用",
+                    "SNS運用代行",
+                    "MEO対策(Googleビジネスプロフィール)",
+                    "店舗・料理撮影",
+                    "メニューデザイン",
+                    "飲食店のランディングページ制作",
+                    "AI検索対策(AIO)",
+                    "飲食店向け業務アプリ開発",
+                    "原価管理・売上管理・棚卸のDX",
+                    "AIを活用した市場分析"
+                ],
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "サービスと料金(すべて税抜)",
+                    "itemListElement": [
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "ライトプラン(SNS・MEOコンサルティング特化)",
+                                "url": "https://fukuya-fs.com/sns.html",
+                                "provider": {
+                                    "@id": "https://fukuya-fs.com/#organization"
+                                },
+                                "description": "Instagram・MEOの毎月の分析・改善レポート、プロフィール案・投稿台本の提案、月1回のオンラインMTG。全国オンライン対応"
+                            },
+                            "priceCurrency": "JPY",
+                            "availability": "https://schema.org/InStock",
+                            "priceSpecification": {
+                                "@type": "UnitPriceSpecification",
+                                "price": 40000,
+                                "priceCurrency": "JPY",
+                                "unitText": "月",
+                                "valueAddedTaxIncluded": false
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "スタンダードプラン(店舗撮影・Instagram投稿・リール運用代行)",
+                                "url": "https://fukuya-fs.com/sns.html",
+                                "provider": {
+                                    "@id": "https://fukuya-fs.com/#organization"
+                                },
+                                "description": "店舗での写真・動画撮影 月1〜2回、Instagram投稿・リール運用代行 週2〜3回、月1回のオンラインMTG、ライトプランの全内容を包含。対応エリアは東京都内・神奈川・埼玉・千葉"
+                            },
+                            "priceCurrency": "JPY",
+                            "availability": "https://schema.org/InStock",
+                            "priceSpecification": {
+                                "@type": "UnitPriceSpecification",
+                                "price": 59800,
+                                "priceCurrency": "JPY",
+                                "unitText": "月",
+                                "valueAddedTaxIncluded": false
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "ホームページ(LP)制作 初回制作費",
+                                "url": "https://fukuya-fs.com/lp.html",
+                                "provider": {
+                                    "@id": "https://fukuya-fs.com/#organization"
+                                },
+                                "description": "企画・原稿作成、デザイン・スマホ対応、AI検索(AIO)・SEO・MEO対策一式、公開設定"
+                            },
+                            "priceCurrency": "JPY",
+                            "availability": "https://schema.org/InStock",
+                            "price": 69800
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "ホームページ(LP)の維持・管理と月次更新",
+                                "url": "https://fukuya-fs.com/lp.html",
+                                "provider": {
+                                    "@id": "https://fukuya-fs.com/#organization"
+                                },
+                                "description": "サイトの維持・管理、メニュー・写真の月次更新"
+                            },
+                            "priceCurrency": "JPY",
+                            "availability": "https://schema.org/InStock",
+                            "priceSpecification": {
+                                "@type": "UnitPriceSpecification",
+                                "price": 9800,
+                                "priceCurrency": "JPY",
+                                "unitText": "月",
+                                "valueAddedTaxIncluded": false
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "メニュー作成(撮影込み)",
+                                "url": "https://fukuya-fs.com/menu.html",
+                                "provider": {
+                                    "@id": "https://fukuya-fs.com/#organization"
+                                },
+                                "description": "店舗での料理・商品撮影とメニューのデザイン制作"
+                            },
+                            "priceCurrency": "JPY",
+                            "availability": "https://schema.org/InStock",
+                            "price": 35000
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "オーダーメイドアプリ開発(初期開発費・300,000円〜)",
+                                "url": "https://fukuya-fs.com/app.html",
+                                "provider": {
+                                    "@id": "https://fukuya-fs.com/#organization"
+                                },
+                                "description": "予約管理・在庫管理・顧客台帳など飲食店の業務に合わせた業務アプリ開発。内容により個別見積。月額運用・保守は15,000円〜。全国オンライン対応"
+                            },
+                            "priceCurrency": "JPY",
+                            "availability": "https://schema.org/InStock",
+                            "price": 300000
+                        }
+                    ]
+                }
             },
             {
-                "@type": "Offer",
-                "itemOffered": { "@type": "Service", "name": "スタンダードプラン（店舗撮影・Instagram投稿・リール運用代行）" },
-                "price": "59800",
-                "priceCurrency": "JPY"
+                "@type": "Person",
+                "@id": "https://fukuya-fs.com/#person",
+                "name": "寺島 久雄",
+                "alternateName": "Hisao Terajima",
+                "jobTitle": "代表",
+                "worksFor": {
+                    "@id": "https://fukuya-fs.com/#organization"
+                },
+                "image": "https://fukuya-fs.com/images/profile-avatar.png",
+                "description": "飲食業界20年。店長、複数店舗を統括するエリアマネージャー、ロサンゼルスでの現地責任者、中国での新規出店担当として国内外の店舗経営に携わる。デザイン分野ではディレクターとして制作を統括。現在は飲食店専門のSNS運用・撮影・LP制作・業務アプリ開発を一人で手がけ、最新のAIを日々の業務に活用している。",
+                "knowsAbout": [
+                    "飲食店経営",
+                    "店舗運営・エリアマネジメント",
+                    "海外出店",
+                    "Instagram運用",
+                    "MEO対策",
+                    "撮影・デザインディレクション",
+                    "AIを活用した業務アプリ開発"
+                ],
+                "sameAs": [
+                    "https://x.com/terajima_fukuya",
+                    "https://note.com/long_clover8311"
+                ]
             },
             {
-                "@type": "Offer",
-                "itemOffered": { "@type": "Service", "name": "メニュー作成（撮影込み）" },
-                "price": "35000",
-                "priceCurrency": "JPY"
+                "@type": "WebSite",
+                "@id": "https://fukuya-fs.com/#website",
+                "url": "https://fukuya-fs.com/",
+                "name": "Fukuya Food & SNS Consulting",
+                "inLanguage": "ja",
+                "publisher": {
+                    "@id": "https://fukuya-fs.com/#organization"
+                }
             },
             {
-                "@type": "Offer",
-                "itemOffered": { "@type": "Service", "name": "ホームページ（LP）制作（初回制作費。企画・原稿作成、デザイン・スマホ対応、AI検索（AIO）・SEO・MEO対策一式、公開設定を含む）" },
-                "price": "69800",
-                "priceCurrency": "JPY"
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": { "@type": "Service", "name": "LPの維持・管理、メニュー・写真の月次更新（月額）" },
-                "price": "9800",
-                "priceCurrency": "JPY"
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": { "@type": "Service", "name": "オーダーメイドアプリ開発（飲食店向け業務アプリ）" },
-                "price": "300000",
-                "priceCurrency": "JPY"
+                "@type": "WebPage",
+                "@id": "https://fukuya-fs.com/#webpage",
+                "url": "https://fukuya-fs.com/",
+                "name": "飲食店専門のSNS運用代行・Instagram撮影・MEO対策【東京・都内近郊】| Fukuya Food & SNS Consulting",
+                "isPartOf": {
+                    "@id": "https://fukuya-fs.com/#website"
+                },
+                "about": {
+                    "@id": "https://fukuya-fs.com/#organization"
+                },
+                "inLanguage": "ja",
+                "dateModified": "2026-10-22"
             }
         ]
     }
     </script>
-    <!-- 構造化データ: FAQ -->
+    <!-- 構造化データ: FAQ(下記FAQセクションの文言と常に一致させること) -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -165,53 +367,128 @@
             {
                 "@type": "Question",
                 "name": "SNSの知識が全くなくても大丈夫ですか？",
-                "acceptedAnswer": { "@type": "Answer", "text": "はい、問題ありません。スタンダードプランでは撮影から投稿・分析までFukuyaがすべて代行しますので、オーナー様はお店の運営に集中していただけます。また、ノウハウ共有やスタッフ研修を通じて、お店に知識と仕組みを残すことも大切にしています。" }
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "はい、問題ありません。スタンダードプランでは撮影から投稿・分析までFukuyaがすべて代行しますので、オーナー様はお店の運営に集中していただけます。また、ノウハウ共有やスタッフ研修を通じて、お店に知識と仕組みを残すことも大切にしています。"
+                }
             },
             {
                 "@type": "Question",
                 "name": "料金はいくらですか？",
-                "acceptedAnswer": { "@type": "Answer", "text": "月額プランは、コンサルティング特化のライトプランが月額40,000円（税抜）、撮影から運用まで代行するスタンダードプランが月額59,800円（税抜）です。単品では、メニュー作成（撮影込み）が35,000円（税抜）です。ホームページ（LP）制作は初回制作費69,800円（税抜）＋月額9,800円（税抜。サイトの維持・管理、メニュー・写真の月次更新込み）です。" }
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "月額プランは、コンサルティング特化のライトプランが月額40,000円（税抜）、撮影から運用まで代行するスタンダードプランが月額59,800円（税抜）です。単品では、メニュー作成（撮影込み）が35,000円（税抜）です。ホームページ（LP）制作は初回制作費69,800円（税抜）＋月額9,800円（税抜。サイトの維持・管理、メニュー・写真の月次更新込み）です。"
+                }
             },
             {
                 "@type": "Question",
                 "name": "ライトプランとスタンダードプランの違いは何ですか？",
-                "acceptedAnswer": { "@type": "Answer", "text": "ライトプランは分析レポート・投稿台本のご提案などコンサルティングに特化したプランで、撮影と投稿はお客様ご自身で行っていただきます。スタンダードプランは月1〜2回の店舗撮影から週2〜3回のInstagram投稿・リール運用までをFukuyaが代行します。" }
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "ライトプランは分析レポート・投稿台本のご提案などコンサルティングに特化したプランで、撮影と投稿はお客様ご自身で行っていただきます。スタンダードプランは月1〜2回の店舗撮影から週2〜3回のInstagram投稿・リール運用までをFukuyaが代行します。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "個人経営・小規模の飲食店でも依頼できますか？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "はい。1店舗だけのお店や、オーナー様お一人で切り盛りされているお店からのご相談を歓迎しています。Fukuyaの料金は、大手代理店には頼みづらい個人店・小規模店でも無理なく続けられる価格を前提に設計しています。まずは無料の店舗デジタル力診断からお気軽にどうぞ。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "どんな業態の飲食店に対応していますか？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "居酒屋・焼鳥・焼肉・寿司・和食・ラーメン・カフェ・バー・イタリアン・中華など、業態は問いません。代表は店長・エリアマネージャーとして複数業態の店舗運営を経験し、ロサンゼルスや中国での出店にも携わってきました。業態ごとの客層・客単価・オペレーションの違いを踏まえて施策をご提案します。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "他のSNS運用代行会社との違いは何ですか？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "大きく3つあります。(1) IT会社や広告代理店ではなく、飲食の現場を20年歩いた「現場出身」の代表が直接担当すること。(2) 毎日最新のAIで市場・アルゴリズム・競合を分析し、感覚ではなくデータにもとづいて施策を決めること。(3) 営業担当や下請けを介さない直接契約のため中間マージンがなく、一般的な相場より大幅に低い価格で提供できること。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "効果が出るまで、どのくらいかかりますか？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "SNSやMEOは積み上げ型のため、一般的に3〜6か月を目安にお考えください。初月はアカウント分析・プロフィール設計・投稿設計・Googleビジネスプロフィールの整備といった土台づくりに充て、2〜3か月目から毎月のレポートで数値の変化を追っていきます。成果を保証するものではありませんが、毎日AIで市場とアルゴリズムを分析し、根拠のある改善を積み重ねます。"
+                }
             },
             {
                 "@type": "Question",
                 "name": "契約期間に縛りはありますか？",
-                "acceptedAnswer": { "@type": "Answer", "text": "月額プランのご契約期間は原則6か月以上とさせていただいています。SNSやMEOの成果は積み上げ型のため、短期間では効果測定が難しいことが理由です。ご不安な点は無料相談の際に遠慮なくお尋ねください。" }
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "月額プランのご契約期間は原則6か月以上とさせていただいています。SNSやMEOの成果は積み上げ型のため、短期間では効果測定が難しいことが理由です。ご不安な点は無料相談の際に遠慮なくお尋ねください。"
+                }
             },
             {
                 "@type": "Question",
                 "name": "撮影はどのように行われますか？",
-                "acceptedAnswer": { "@type": "Answer", "text": "スタンダードプランでは月1〜2回、プロがお店に伺って料理や店内の写真・動画を撮影します。オーナー様側での準備や手間は最小限で構いません。撮影の対応エリアは東京都内・神奈川・埼玉・千葉です（一部地域は要相談）。" }
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "スタンダードプランでは月1〜2回、プロがお店に伺って料理や店内の写真・動画を撮影します。オーナー様側での準備や手間は最小限で構いません。撮影の対応エリアは東京都内・神奈川・埼玉・千葉です（一部地域は要相談）。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "撮影だけ、メニューだけなど単発でも依頼できますか？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "メニュー作成（撮影込み・35,000円税抜）とホームページ（LP）制作は、月額プランに入らなくても単発でご依頼いただけます。店舗撮影のみのご依頼は、内容により個別にご相談ください。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Instagramのアカウントをまだ持っていなくても大丈夫ですか？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "はい。アカウントの開設、プロフィールの設計、最初の投稿づくりからサポートします。Googleビジネスプロフィール（Googleマップ）が未整備の場合も、同時に整えていきます。"
+                }
             },
             {
                 "@type": "Question",
                 "name": "今すぐ契約するか決めていなくても相談できますか？",
-                "acceptedAnswer": { "@type": "Answer", "text": "もちろんです。無料の店舗デジタル力診断もご用意していますので、「話だけ聞きたい」という段階でもお気軽にご連絡ください。無理な営業は一切いたしません。お問い合わせへの返信は1営業日以内です。" }
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "もちろんです。無料の店舗デジタル力診断もご用意していますので、「話だけ聞きたい」という段階でもお気軽にご連絡ください。無理な営業は一切いたしません。お問い合わせへの返信は1営業日以内です。"
+                }
             },
             {
                 "@type": "Question",
                 "name": "解約したら、それまでの投稿やノウハウはどうなりますか？",
-                "acceptedAnswer": { "@type": "Answer", "text": "アカウントも投稿もすべてお店の資産としてそのまま残ります。Fukuyaは契約中からノウハウ共有・スタッフ研修を行い、お店が自走できる仕組みづくりを重視していますので、解約後もご自身で運用を続けていただけます。" }
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "アカウントも投稿もすべてお店の資産としてそのまま残ります。Fukuyaは契約中からノウハウ共有・スタッフ研修を行い、お店が自走できる仕組みづくりを重視していますので、解約後もご自身で運用を続けていただけます。"
+                }
             },
             {
                 "@type": "Question",
                 "name": "対応エリアを教えてください。",
-                "acceptedAnswer": { "@type": "Answer", "text": "撮影や対面での打ち合わせを伴うサービス（スタンダードプラン、メニュー作成、ホームページ制作）は、東京都内・神奈川・埼玉・千葉に対応しています（一部地域は要相談）。コンサルティング特化のライトプランと、アプリ開発は全国オンライン対応です。" }
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "撮影や対面での打ち合わせを伴うサービス（スタンダードプラン、メニュー作成、ホームページ制作）は、東京都内・神奈川・埼玉・千葉に対応しています（一部地域は要相談）。コンサルティング特化のライトプランと、アプリ開発は全国オンライン対応です。"
+                }
             },
             {
                 "@type": "Question",
                 "name": "アプリ開発もお願いできますか？",
-                "acceptedAnswer": { "@type": "Answer", "text": "はい。予約管理・在庫管理・顧客台帳など、お店の業務に合わせたオーダーメイドのアプリ開発を承っています。初期開発費300,000円〜（税抜・内容により個別見積）、月額運用・保守15,000円〜（税抜）です。オンライン対応のため全国からご依頼いただけます。" }
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "はい。予約管理・在庫管理・顧客台帳など、お店の業務に合わせたオーダーメイドのアプリ開発を承っています。初期開発費300,000円〜（税抜・内容により個別見積）、月額運用・保守15,000円〜（税抜）です。オンライン対応のため全国からご依頼いただけます。自社アプリ「スマ仕入」「スマ売上」「スマ棚」は現在クライアント店舗向けにモニター提供中で、一般提供は準備中です。"
+                }
             }
         ]
     }
     </script>
 </head>
-<body class="bg-white text-fukuya-dark antialiased leading-relaxed font-sans">
+<body class="bg-white text-fukuya-dark antialiased leading-relaxed font-sans mobile-cta-space">
 
     <!-- ヘッダー -->
     <header class="bg-white/98 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50" id="header">
@@ -260,12 +537,12 @@
                 <!-- 権威性バッジ -->
                 <div class="inline-flex items-center gap-2 mb-4 bg-white/10 border border-white/20 px-3 py-1.5">
                     <span style="color:#c8a97e" class="text-xs">&#9733;</span>
-                    <p class="text-xs text-gray-200 font-light tracking-wide">店長からエリアマネージャー、海外出店まで。"飲食の現場出身"が直接担当</p>
+                    <p class="text-xs text-gray-200 font-light tracking-wide"><span class="inline-block">店長からエリアマネージャー、海外出店まで。</span><span class="inline-block">"飲食の現場出身"が直接担当</span></p>
                 </div>
 
                 <!-- メインコピー -->
                 <h1 class="hero-h1 font-bold text-white mb-4" style="font-size:clamp(1.5rem,5vw,2.8rem); letter-spacing:0.03em; line-height:1.4">
-                    飲食店の<span style="color:#c8a97e">集客とDX</span>を、<br>AIの力でまるごと支援。
+                    <span class="inline-block">飲食店の<span style="color:#c8a97e">集客とDX</span>を、</span><br><span class="inline-block">AIの力で</span><span class="inline-block">まるごと支援。</span>
                 </h1>
 
                 <!-- サブコピー -->
@@ -275,7 +552,7 @@
 
                 <!-- 対応エリア -->
                 <p class="text-xs text-gray-400 font-light border-l-2 pl-3 mb-7" style="border-color:#9a8060">
-                    対応エリア：東京都内・神奈川・埼玉・千葉　※ライトプランは全国オンライン対応
+                    <span class="inline-block mr-3">対応エリア：東京都内・神奈川・埼玉・千葉</span><span class="inline-block">※ライトプランは全国オンライン対応</span>
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-3">
@@ -296,41 +573,69 @@
         </a>
     </section>
 
+    <!-- ===== 一目でわかるFukuya(AI検索経由の訪問者が最初に確認したい事実を集約) ===== -->
+    <section id="glance" class="bg-white border-b border-gray-100" style="padding-top:2.75rem;padding-bottom:2.75rem">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <p class="text-xs md:text-sm text-gray-500 font-light leading-relaxed text-center max-w-3xl mx-auto mb-6"><strong class="text-fukuya-dark font-medium">Fukuya Food &amp; SNS Consulting（フクヤ）</strong>は、東京を拠点に<span class="inline-block">飲食店専門で</span><span class="inline-block">Instagram運用代行・店舗撮影・MEO対策・</span><span class="inline-block">ホームページ（LP）制作・メニュー制作・</span><span class="inline-block">業務アプリ開発を行う、</span><span class="inline-block">代表 寺島久雄の個人事業です。</span></p>
+            <dl class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+                <div class="border border-gray-200 bg-white p-4 text-center">
+                    <dt class="label-tag text-gray-400 mb-1.5">PRICE</dt>
+                    <dd class="font-bold text-fukuya-dark text-sm md:text-lg leading-tight"><span class="inline-block">月額</span> <span class="inline-block">¥40,000〜</span></dd>
+                    <dd class="text-[11px] text-gray-400 mt-1 font-light leading-snug"><span class="inline-block">税抜。撮影込みでも</span><span class="inline-block">¥59,800</span></dd>
+                </div>
+                <div class="border border-gray-200 bg-white p-4 text-center">
+                    <dt class="label-tag text-gray-400 mb-1.5">EXPERIENCE</dt>
+                    <dd class="font-bold text-fukuya-dark text-sm md:text-lg leading-tight"><span class="inline-block">飲食の現場</span> <span class="inline-block">20年</span></dd>
+                    <dd class="text-[11px] text-gray-400 mt-1 font-light leading-snug"><span class="inline-block">店長・エリアマネージャー・</span><span class="inline-block">海外出店</span></dd>
+                </div>
+                <div class="border border-gray-200 bg-white p-4 text-center">
+                    <dt class="label-tag text-gray-400 mb-1.5">AREA</dt>
+                    <dd class="font-bold text-fukuya-dark text-sm md:text-lg leading-tight"><span class="inline-block">東京・神奈川・</span><span class="inline-block">埼玉・千葉</span></dd>
+                    <dd class="text-[11px] text-gray-400 mt-1 font-light leading-snug"><span class="inline-block">ライトプラン・アプリ開発は</span><span class="inline-block">全国オンライン</span></dd>
+                </div>
+                <div class="border border-gray-200 bg-white p-4 text-center">
+                    <dt class="label-tag text-gray-400 mb-1.5">RESPONSE</dt>
+                    <dd class="font-bold text-fukuya-dark text-sm md:text-lg leading-tight"><span class="inline-block">返信</span> <span class="inline-block">1営業日以内</span></dd>
+                    <dd class="text-[11px] text-gray-400 mt-1 font-light leading-snug"><span class="inline-block">無理な営業なし・</span><span class="inline-block">契約はご納得後でOK</span></dd>
+                </div>
+            </dl>
+        </div>
+    </section>
 
     <!-- ===== PAIN POINTS ===== -->
     <section id="pain" class="bg-white">
         <div class="container mx-auto px-6 max-w-5xl">
             <div class="text-center mb-12" data-aos="fade-up">
                 <span class="label-tag text-gray-400 block mb-3">お悩み</span>
-                <h2 class="text-2xl md:text-4xl font-bold text-fukuya-dark mb-4">こんなお悩み、抱えていませんか？</h2>
+                <h2 class="text-2xl md:text-4xl font-bold text-fukuya-dark mb-4"><span class="inline-block">こんなお悩み、</span><span class="inline-block">抱えていませんか？</span></h2>
                 <div class="w-10 h-px bg-gray-200 mx-auto mb-5"></div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div class="bg-gray-50 border border-gray-100 p-6 group hover:shadow-md transition-all" data-aos="fade-up" data-aos-delay="100">
                     <div class="text-3xl mb-3">😰</div>
-                    <h3 class="font-bold text-base mb-2 text-fukuya-dark">SNSを更新する時間も余裕もない</h3>
+                    <h3 class="font-bold text-base mb-2 text-fukuya-dark"><span class="inline-block">SNSを更新する</span><span class="inline-block">時間も余裕もない</span></h3>
                     <p class="text-gray-500 leading-relaxed text-sm font-light">営業終わりでクタクタ。何を投稿すればいいか分からないし、画像を作る時間もない。</p>
                 </div>
                 <div class="bg-gray-50 border border-gray-100 p-6 group hover:shadow-md transition-all" data-aos="fade-up" data-aos-delay="150">
                     <div class="text-3xl mb-3">💸</div>
-                    <h3 class="font-bold text-base mb-2 text-fukuya-dark">コストが膨らんで利益が残らない</h3>
+                    <h3 class="font-bold text-base mb-2 text-fukuya-dark"><span class="inline-block">コストが膨らんで</span><span class="inline-block">利益が残らない</span></h3>
                     <p class="text-gray-500 leading-relaxed text-sm font-light">グルメサイトへの残高、投資対効果が見えない委託費。払い続けているのに結果が出ない。</p>
                 </div>
                 <div class="bg-gray-50 border border-gray-100 p-6 group hover:shadow-md transition-all" data-aos="fade-up" data-aos-delay="200">
                     <div class="text-3xl mb-3">🗣️</div>
-                    <h3 class="font-bold text-base mb-2 text-fukuya-dark">業者は「現場」を分かってくれない</h3>
+                    <h3 class="font-bold text-base mb-2 text-fukuya-dark"><span class="inline-block">業者は「現場」を</span><span class="inline-block">分かってくれない</span></h3>
                     <p class="text-gray-500 leading-relaxed text-sm font-light">キッチンの導線や原価構造を無視した提案ばかり。現場を知らない机上の空論、もう疲れた。</p>
                 </div>
                 <div class="bg-gray-50 border border-gray-100 p-6 group hover:shadow-md transition-all" data-aos="fade-up" data-aos-delay="250">
                     <div class="text-3xl mb-3">🧩</div>
-                    <h3 class="font-bold text-base mb-2 text-fukuya-dark">媒体ごとに業者がバラバラで高い</h3>
+                    <h3 class="font-bold text-base mb-2 text-fukuya-dark"><span class="inline-block">媒体ごとに業者が</span><span class="inline-block">バラバラで高い</span></h3>
                     <p class="text-gray-500 leading-relaxed text-sm font-light">インスタ・MEO・撮影を別々に発注。窓口が分散し、コストだけが膨らんでいる。</p>
                 </div>
             </div>
             <div class="mt-10 text-center" data-aos="zoom-in">
                 <div class="inline-block bg-fukuya-dark text-white px-7 py-5 max-w-lg text-center">
-                    <p class="font-bold text-sm md:text-base text-gray-200 mb-1">「繁盛店の裏側を、一緒につくりませんか？」</p>
-                    <p class="text-gray-400 text-xs font-light">IT会社でも広告代理店でもなく、"飲食の現場出身"。20年の現場経験を持つ右腕が、お店に伴走します。</p>
+                    <p class="font-bold text-sm md:text-base text-gray-200 mb-1"><span class="inline-block">「繁盛店の裏側を、</span><span class="inline-block">一緒につくりませんか？」</span></p>
+                    <p class="text-gray-400 text-xs font-light"><span class="inline-block">IT会社でも広告代理店でもなく、</span><span class="inline-block">"飲食の現場出身"。</span><span class="inline-block">20年の現場経験を持つ右腕が、</span><span class="inline-block">お店に伴走します。</span></p>
                 </div>
             </div>
         </div>
@@ -347,8 +652,8 @@
                     <span class="label-tag" style="color:#b8985a">FUKUYA'S WORKFLOW</span>
                     <span class="gold-line"></span>
                 </div>
-                <h2 class="text-2xl md:text-4xl font-bold mb-4" style="letter-spacing:0.05em">撮影から<span style="color:#b8985a">分析まで</span>、プロが一気通貫で支える。</h2>
-                <p class="text-sm text-gray-300 font-light leading-relaxed" style="letter-spacing:0.03em">InstagramもMEOも、すべてFukuyaが担当。オーナー様はお店の運営だけに集中できます。</p>
+                <h2 class="text-2xl md:text-4xl font-bold mb-4" style="letter-spacing:0.05em"><span class="inline-block">撮影から<span style="color:#b8985a">分析まで</span>、</span><span class="inline-block">プロが一気通貫で支える。</span></h2>
+                <p class="text-sm text-gray-300 font-light leading-relaxed" style="letter-spacing:0.03em"><span class="inline-block">InstagramもMEOも、すべてFukuyaが担当。</span><span class="inline-block">オーナー様はお店の運営だけに集中できます。</span></p>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <div class="text-center group" data-aos="fade-up" data-aos-delay="100">
@@ -378,7 +683,7 @@
             </div>
             <div class="mt-12 text-center" data-aos="zoom-in">
                 <div class="inline-block border border-white/10 px-7 py-4">
-                    <p class="font-bold text-sm md:text-base" style="color:#b8985a">「撮影から分析まで、すべてFukuyaが責任を持って担当します。」</p>
+                    <p class="font-bold text-sm md:text-base" style="color:#b8985a"><span class="inline-block">「撮影から分析まで、</span><span class="inline-block">すべてFukuyaが</span><span class="inline-block">責任を持って担当します。」</span></p>
                     <p class="text-gray-500 text-xs mt-1 font-light">オーナー様がSNSで消耗する時代は終わりです。</p>
                 </div>
             </div>
@@ -403,19 +708,19 @@
                 <div class="text-center mb-10">
                     <div class="label-tag text-fukuya-mid tracking-[0.15em] mb-3">LIGHT PLAN</div>
                     <h3 class="text-xl md:text-2xl font-bold text-fukuya-dark mb-3" style="letter-spacing:0.05em">ライトプラン</h3>
-                    <p class="text-sm text-gray-500 font-light max-w-lg mx-auto leading-relaxed">コンサルティング特化（撮影はお客様）。全国対応・オンライン完結。</p>
+                    <p class="text-sm text-gray-500 font-light max-w-lg mx-auto leading-relaxed"><span class="inline-block">コンサルティング特化（撮影はお客様）。</span><span class="inline-block">全国対応・オンライン完結。</span></p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
                     <div class="bg-gray-50 border border-gray-100 p-7 md:p-8">
                         <p class="label-tag text-gray-400 tracking-[0.15em] mb-5">SNSコンサルの一般的な価格帯</p>
                         <ul>
                             <li class="flex items-baseline justify-between gap-4 border-b border-gray-200 py-3">
-                                <span class="text-sm text-gray-600 font-light flex-shrink-0">SNSコンサルティング会社</span>
-                                <span class="text-sm text-gray-500 text-right">月5万〜10万円</span>
+                                <span class="text-sm text-gray-600 font-light"><span class="inline-block">SNSコンサルティング</span><span class="inline-block">会社</span></span>
+                                <span class="text-sm text-gray-500 text-right whitespace-nowrap">月5万〜10万円</span>
                             </li>
                             <li class="flex items-baseline justify-between gap-4 py-3">
-                                <span class="text-sm text-gray-600 font-light flex-shrink-0">運用代行まで依頼した場合</span>
-                                <span class="text-sm text-gray-500 text-right">月10万〜30万円</span>
+                                <span class="text-sm text-gray-600 font-light"><span class="inline-block">運用代行まで</span><span class="inline-block">依頼した場合</span></span>
+                                <span class="text-sm text-gray-500 text-right whitespace-nowrap">月10万〜30万円</span>
                             </li>
                         </ul>
                     </div>
@@ -428,7 +733,7 @@
                             <span class="text-gray-400 font-light text-sm mb-1">/ 月（税抜）</span>
                         </div>
                         <ul class="space-y-2.5 text-sm flex-grow mb-6">
-                            <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light">Instagram &amp; MEO 毎月の分析・改善レポート</span></li>
+                            <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light"><span class="inline-block">Instagram &amp; MEO</span> <span class="inline-block">毎月の分析・改善レポート</span></span></li>
                             <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light">プロフィール案の提案</span></li>
                             <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light">投稿台本の提案（週1本）</span></li>
                             <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light">月1回のオンラインミーティング</span></li>
@@ -444,23 +749,23 @@
                 <div class="text-center mb-10">
                     <div class="label-tag text-fukuya-mid tracking-[0.15em] mb-3">STANDARD PLAN</div>
                     <h3 class="text-xl md:text-2xl font-bold text-fukuya-dark mb-3" style="letter-spacing:0.05em">スタンダードプラン</h3>
-                    <p class="text-sm text-gray-500 font-light max-w-lg mx-auto leading-relaxed">撮影から運用まで、まるごとお任せ。対応エリア：東京都内・神奈川・埼玉・千葉。</p>
+                    <p class="text-sm text-gray-500 font-light max-w-lg mx-auto leading-relaxed"><span class="inline-block">撮影から運用まで、まるごとお任せ。</span><span class="inline-block">対応エリア：東京都内・神奈川・埼玉・千葉。</span></p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
                     <div class="bg-gray-50 border border-gray-100 p-7 md:p-8">
                         <p class="label-tag text-gray-400 tracking-[0.15em] mb-5">個別に外注した場合の価格帯</p>
                         <ul>
                             <li class="flex items-baseline justify-between gap-4 border-b border-gray-200 py-3">
-                                <span class="text-sm text-gray-600 font-light flex-shrink-0">SNS運用代行（投稿・リール）</span>
-                                <span class="text-sm text-gray-500 text-right">月10万〜30万円</span>
+                                <span class="text-sm text-gray-600 font-light"><span class="inline-block">SNS運用代行</span><span class="inline-block">（投稿・リール）</span></span>
+                                <span class="text-sm text-gray-500 text-right whitespace-nowrap">月10万〜30万円</span>
                             </li>
                             <li class="flex items-baseline justify-between gap-4 border-b border-gray-200 py-3">
-                                <span class="text-sm text-gray-600 font-light flex-shrink-0">店舗・料理の撮影（単発）</span>
-                                <span class="text-sm text-gray-500 text-right">1回2万〜5万円</span>
+                                <span class="text-sm text-gray-600 font-light"><span class="inline-block">店舗・料理の撮影</span><span class="inline-block">（単発）</span></span>
+                                <span class="text-sm text-gray-500 text-right whitespace-nowrap">1回2万〜5万円</span>
                             </li>
                             <li class="flex items-baseline justify-between gap-4 py-3">
-                                <span class="text-sm text-gray-600 font-light flex-shrink-0">合計イメージ</span>
-                                <span class="text-sm text-gray-500 text-right">月12万円前後〜</span>
+                                <span class="text-sm text-gray-600 font-light">合計イメージ</span>
+                                <span class="text-sm text-gray-500 text-right whitespace-nowrap">月12万円前後〜</span>
                             </li>
                         </ul>
                     </div>
@@ -473,8 +778,8 @@
                             <span class="text-gray-400 font-light text-sm mb-1">/ 月（税抜）</span>
                         </div>
                         <ul class="space-y-2.5 text-sm flex-grow mb-6">
-                            <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light">店舗での<strong class="text-white font-medium">写真・動画撮影</strong>（月1〜2回）</span></li>
-                            <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light"><strong class="text-white font-medium">Instagram投稿・リール</strong>の運用代行（週2〜3回）</span></li>
+                            <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light"><span class="inline-block">店舗での<strong class="text-white font-medium">写真・動画撮影</strong></span><span class="inline-block">（月1〜2回）</span></span></li>
+                            <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light"><span class="inline-block"><strong class="text-white font-medium">Instagram投稿・リール</strong>の運用代行</span><span class="inline-block">（週2〜3回）</span></span></li>
                             <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light">月1回の<strong class="text-white font-medium">オンラインミーティング</strong></span></li>
                             <li class="flex items-start gap-3"><span style="color:#c8a97e" class="mt-0.5 flex-shrink-0 font-bold">✓</span><span class="text-gray-300 font-light">ライトプランの<strong class="text-white font-medium">全内容を包含</strong></span></li>
                         </ul>
@@ -486,7 +791,7 @@
             <!-- 契約期間の注記 -->
             <p class="mt-8 text-center text-xs font-light text-gray-400" style="letter-spacing:0.1em">※ ご契約期間は原則６か月以上となります。<br>※ 記載の相場は、制作会社・代理店等の公開料金をもとにした当社調べの目安です（2026年7月時点）。</p>
             <div class="mt-10 text-center">
-                <a href="sns.html" class="inline-flex items-center justify-center gap-3 bg-fukuya-dark text-white px-10 py-4 text-sm md:text-base font-bold tracking-widest shadow-lg hover:bg-fukuya-orange hover:-translate-y-0.5 transition-all">SNS運用代行の詳細ページを見る<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></a>
+                <a href="sns.html" class="inline-flex w-full sm:w-auto items-center justify-center gap-3 bg-fukuya-dark text-white px-5 sm:px-10 py-4 text-sm md:text-base font-bold tracking-wider sm:tracking-widest shadow-lg hover:bg-fukuya-orange hover:-translate-y-0.5 transition-all"><span><span class="inline-block">SNS運用代行の</span><span class="inline-block">詳細ページを見る</span></span><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></a>
             </div>
 
             <!-- ご紹介特典バナー -->
@@ -498,9 +803,9 @@
                         <div class="flex-grow">
                             <div class="label-tag text-fukuya-orange mb-2 tracking-[0.2em]">REFERRAL BENEFIT</div>
                             <h3 class="text-xl md:text-2xl font-bold text-white mb-2" style="letter-spacing:0.04em">ご紹介特典：月額1ケ月分 <span style="color:#c8a97e">無料</span></h3>
-                            <p class="text-gray-400 text-sm font-light leading-relaxed">お知り合いの飲食店オーナー様をご紹介いただき、本契約（6か月以上）に至った場合、感謝のしるしとして月額料金を１ケ月分無料とさせていただきます。</p>
+                            <p class="text-gray-400 text-sm font-light leading-relaxed">お知り合いの飲食店オーナー様をご紹介いただき、本契約（6か月以上）に至った場合、感謝のしるしとして月額料金を<span class="whitespace-nowrap">１ケ月分無料</span>とさせていただきます。</p>
                         </div>
-                        <a href="#contact" class="flex-shrink-0 bg-fukuya-orange text-white px-6 py-3 font-medium text-sm tracking-widest hover:bg-fukuya-accent transition-all whitespace-nowrap">詳しく相談する</a>
+                        <a href="#contact" class="flex-shrink-0 w-full md:w-auto text-center bg-fukuya-orange text-white px-6 py-3 font-medium text-sm tracking-widest hover:bg-fukuya-accent transition-all whitespace-nowrap">詳しく相談する</a>
                     </div>
                 </div>
             </div>
@@ -517,7 +822,7 @@
                     <span class="gold-line"></span>
                 </div>
                 <h2 class="text-2xl md:text-4xl font-bold text-fukuya-dark mb-3" style="letter-spacing:0.05em">ホームページ（LP）制作</h2>
-                <p class="text-sm text-gray-500 font-light max-w-xl mx-auto leading-relaxed">格安AI制作に近い価格で、制作会社の内容を。しかも<strong class="text-fukuya-dark font-medium">AI検索（AIO）対応</strong>を標準搭載——「AIに聞く」時代の集客に先回りします。</p>
+                <p class="text-sm text-gray-500 font-light max-w-xl mx-auto leading-relaxed"><span class="inline-block">格安AI制作に近い価格で、</span><span class="inline-block">制作会社の内容を。</span><span class="inline-block">しかも<strong class="text-fukuya-dark font-medium">AI検索（AIO）対応</strong>を標準搭載——</span><span class="inline-block">「AIに聞く」時代の集客に先回りします。</span></p>
             </div>
 
             <!-- AI検索（AIO）標準搭載の訴求 -->
@@ -538,20 +843,20 @@
                         <p class="label-tag text-gray-400 tracking-[0.15em] mb-5">制作費の一般的な価格帯</p>
                         <ul>
                             <li class="flex items-baseline justify-between gap-4 border-b border-gray-200 py-3">
-                                <span class="text-sm text-gray-600 font-light flex-shrink-0">制作会社</span>
+                                <span class="text-sm text-gray-600 font-light">制作会社</span>
                                 <span class="text-right">
-                                    <span class="text-sm text-gray-500">30万〜60万円</span>
+                                    <span class="text-sm text-gray-500 whitespace-nowrap">30万〜60万円</span>
                                     <span class="block text-[10px] text-gray-400 font-light">LP平均55.4万円・中央値40万円</span>
                                 </span>
                             </li>
                             <li class="flex items-baseline justify-between gap-4 border-b border-gray-200 py-3">
-                                <span class="text-sm text-gray-600 font-light flex-shrink-0">フリーランス</span>
-                                <span class="text-sm text-gray-500 text-right">8万〜15万円</span>
+                                <span class="text-sm text-gray-600 font-light">フリーランス</span>
+                                <span class="text-sm text-gray-500 text-right whitespace-nowrap">8万〜15万円</span>
                             </li>
                             <li class="flex items-baseline justify-between gap-4 py-3">
-                                <span class="text-sm text-gray-600 font-light flex-shrink-0">AI・テンプレート格安制作</span>
+                                <span class="text-sm text-gray-600 font-light"><span class="inline-block">AI・テンプレート</span><span class="inline-block">格安制作</span></span>
                                 <span class="text-right">
-                                    <span class="text-sm text-gray-500">1万〜5万円</span>
+                                    <span class="text-sm text-gray-500 whitespace-nowrap">1万〜5万円</span>
                                     <span class="block text-[10px] text-gray-400 font-light">※原稿作成・AI検索対策・写真調整は範囲外が通例</span>
                                 </span>
                             </li>
@@ -580,13 +885,13 @@
                         <p class="label-tag text-gray-400 tracking-[0.15em] mb-5">月額費用の一般的な価格帯</p>
                         <ul>
                             <li class="flex items-baseline justify-between gap-4 border-b border-gray-200 py-3">
-                                <span class="text-sm text-gray-600 font-light flex-shrink-0">更新作業込みの運用</span>
-                                <span class="text-sm text-gray-500 text-right">月2万〜3万円</span>
+                                <span class="text-sm text-gray-600 font-light"><span class="inline-block">更新作業込みの</span><span class="inline-block">運用</span></span>
+                                <span class="text-sm text-gray-500 text-right whitespace-nowrap">月2万〜3万円</span>
                             </li>
                             <li class="flex items-baseline justify-between gap-4 py-3">
-                                <span class="text-sm text-gray-600 font-light flex-shrink-0">保守のみ（更新なし）</span>
+                                <span class="text-sm text-gray-600 font-light"><span class="inline-block">保守のみ</span><span class="inline-block">（更新なし）</span></span>
                                 <span class="text-right">
-                                    <span class="text-sm text-gray-500">月5千〜2万円</span>
+                                    <span class="text-sm text-gray-500 whitespace-nowrap">月5千〜2万円</span>
                                     <span class="block text-[10px] text-gray-400 font-light">管理費は平均4.1万円・中央値1.1万円</span>
                                 </span>
                             </li>
@@ -608,13 +913,13 @@
                 </div>
 
                 <div class="mt-8 text-center">
-                    <a href="#contact" class="inline-block bg-fukuya-orange text-white px-10 py-3.5 font-medium tracking-widest text-sm hover:bg-fukuya-accent transition-all">LP制作を相談する</a>
+                    <a href="#contact" class="inline-block w-full sm:w-auto bg-fukuya-orange text-white px-10 py-3.5 font-medium tracking-widest text-sm hover:bg-fukuya-accent transition-all">LP制作を相談する</a>
                     <p class="mt-4 text-[11px] text-gray-400 font-light">※ 価格はすべて税抜表記です。<br class="md:hidden">※ 相場出典：Web幹事・STOCK SUN等のWeb制作費用調査（2026年）ほか、制作会社・クラウドソーシング等の公開料金をもとにした当社調べ</p>
                 </div>
             </div>
 
             <div class="mt-10 text-center">
-                <a href="lp.html" class="inline-flex items-center justify-center gap-3 bg-fukuya-dark text-white px-10 py-4 text-sm md:text-base font-bold tracking-widest shadow-lg hover:bg-fukuya-orange hover:-translate-y-0.5 transition-all">LP制作の詳細ページを見る<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></a>
+                <a href="lp.html" class="inline-flex w-full sm:w-auto items-center justify-center gap-3 bg-fukuya-dark text-white px-5 sm:px-10 py-4 text-sm md:text-base font-bold tracking-wider sm:tracking-widest shadow-lg hover:bg-fukuya-orange hover:-translate-y-0.5 transition-all"><span><span class="inline-block">LP制作の</span><span class="inline-block">詳細ページを見る</span></span><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></a>
             </div>
             <p class="mt-8 text-center text-xs font-light text-gray-400" style="letter-spacing:0.08em">※ 対面でのお打ち合わせ・撮影をご希望の場合、対応エリアは東京都内・神奈川・埼玉・千葉です（一部地域は要相談）。</p>
         </div>
@@ -630,7 +935,7 @@
                     <span class="gold-line"></span>
                 </div>
                 <h2 class="text-2xl md:text-4xl font-bold text-fukuya-dark mb-3" style="letter-spacing:0.05em">アプリ開発</h2>
-                <p class="text-sm text-gray-500 font-light max-w-lg mx-auto leading-relaxed">飲食店の現場を20年知る開発者が、お店の業務に本当に合うアプリをつくります。オンライン対応のため全国からご依頼いただけます。</p>
+                <p class="text-sm text-gray-500 font-light max-w-lg mx-auto leading-relaxed"><span class="inline-block">飲食店の現場を20年知る開発者が、</span><span class="inline-block">お店の業務に本当に合うアプリをつくります。</span><span class="inline-block">オンライン対応のため全国からご依頼いただけます。</span></p>
             </div>
 
             <!-- オーダーメイド開発 -->
@@ -644,9 +949,9 @@
                         <p class="text-xs text-gray-500 font-light leading-relaxed">実績は、下でご紹介している自社アプリ3本（スマ仕入・スマ売上・スマ棚）——すべてこの体制で開発し、実際の店舗で毎日使われながら磨かれています。「作って終わり」の受託開発とは違う、現場出身の開発です。</p>
                     </div>
                     <div class="md:col-span-2 bg-fukuya-warm border border-gray-200 p-6">
-                        <div class="flex items-end gap-1 mb-1">
-                            <span class="text-3xl font-bold text-fukuya-dark" style="letter-spacing:-0.02em">¥300,000<span class="text-xl">〜</span></span>
-                            <span class="text-gray-400 font-light text-sm mb-1">（税抜・初期開発費）</span>
+                        <div class="flex flex-wrap items-end gap-x-2 gap-y-1 mb-1">
+                            <span class="text-3xl font-bold text-fukuya-dark whitespace-nowrap" style="letter-spacing:-0.02em">¥300,000<span class="text-xl">〜</span></span>
+                            <span class="text-gray-400 font-light text-sm mb-1 whitespace-nowrap">（税抜・初期開発費）</span>
                         </div>
                         <p class="text-xs text-gray-500 font-light mb-4">月額運用・保守 ¥15,000〜（税抜）</p>
                         <div class="bg-white border border-gray-200 px-4 py-3 text-xs text-gray-600 leading-relaxed mb-5">💡 内容・規模により個別にお見積りします。「こんなことできる？」の段階からお気軽にどうぞ</div>
@@ -743,7 +1048,7 @@
             </div>
 
             <div class="mt-10 text-center">
-                <a href="app.html" class="inline-flex items-center justify-center gap-3 bg-fukuya-dark text-white px-10 py-4 text-sm md:text-base font-bold tracking-widest shadow-lg hover:bg-fukuya-orange hover:-translate-y-0.5 transition-all">アプリ開発の詳細ページを見る<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></a>
+                <a href="app.html" class="inline-flex w-full sm:w-auto items-center justify-center gap-3 bg-fukuya-dark text-white px-5 sm:px-10 py-4 text-sm md:text-base font-bold tracking-wider sm:tracking-widest shadow-lg hover:bg-fukuya-orange hover:-translate-y-0.5 transition-all"><span><span class="inline-block">アプリ開発の</span><span class="inline-block">詳細ページを見る</span></span><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></a>
             </div>
         </div>
     </section>
@@ -758,7 +1063,7 @@
                     <span class="gold-line"></span>
                 </div>
                 <h2 class="text-2xl md:text-4xl font-bold text-fukuya-dark mb-3" style="letter-spacing:0.05em">メニュー作成<span style="color:#9a8060">（撮影込み）</span></h2>
-                <p class="text-sm text-gray-500 font-light max-w-lg mx-auto leading-relaxed">飲食の現場とデザインの現場、両方を知る元・デザイナーが直接手掛ける、集客に直結するメニュー表。</p>
+                <p class="text-sm text-gray-500 font-light max-w-lg mx-auto leading-relaxed"><span class="inline-block">飲食の現場とデザインの現場、</span><span class="inline-block">両方を知る元・デザイナーが直接手掛ける、</span><span class="inline-block">集客に直結するメニュー表。</span></p>
             </div>
             <div data-aos="fade-up">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
@@ -766,13 +1071,13 @@
                         <p class="label-tag text-gray-400 tracking-[0.15em] mb-5">メニュー制作の一般的な価格帯</p>
                         <ul>
                             <li class="flex items-baseline justify-between gap-4 border-b border-gray-200 py-3">
-                                <span class="text-sm text-gray-600 font-light flex-shrink-0">制作会社に依頼</span>
-                                <span class="text-sm text-gray-500 text-right">5万〜15万円</span>
+                                <span class="text-sm text-gray-600 font-light">制作会社に依頼</span>
+                                <span class="text-sm text-gray-500 text-right whitespace-nowrap">5万〜15万円</span>
                             </li>
                             <li class="flex items-baseline justify-between gap-4 py-3">
-                                <span class="text-sm text-gray-600 font-light flex-shrink-0">フリーランス・クラウドソーシング</span>
+                                <span class="text-sm text-gray-600 font-light"><span class="inline-block">フリーランス・</span><span class="inline-block">クラウドソーシング</span></span>
                                 <span class="text-right">
-                                    <span class="text-sm text-gray-500">3万〜7.7万円</span>
+                                    <span class="text-sm text-gray-500 whitespace-nowrap">3万〜7.7万円</span>
                                     <span class="block text-[10px] text-gray-400 font-light">※撮影は別料金が通例</span>
                                 </span>
                             </li>
@@ -797,7 +1102,7 @@
             </div>
 
             <div class="mt-10 text-center">
-                <a href="menu.html" class="inline-flex items-center justify-center gap-3 bg-fukuya-dark text-white px-10 py-4 text-sm md:text-base font-bold tracking-widest shadow-lg hover:bg-fukuya-orange hover:-translate-y-0.5 transition-all">メニュー作成の詳細ページを見る<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></a>
+                <a href="menu.html" class="inline-flex w-full sm:w-auto items-center justify-center gap-3 bg-fukuya-dark text-white px-5 sm:px-10 py-4 text-sm md:text-base font-bold tracking-wider sm:tracking-widest shadow-lg hover:bg-fukuya-orange hover:-translate-y-0.5 transition-all"><span><span class="inline-block">メニュー作成の</span><span class="inline-block">詳細ページを見る</span></span><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></a>
             </div>
             <p class="mt-8 text-center text-xs font-light text-gray-400" style="letter-spacing:0.08em">※ 撮影を伴うため、対応エリアは東京都内・神奈川・埼玉・千葉となります（一部地域は要相談）。<br>※ 価格は税抜。相場は制作会社・クラウドソーシング等の公開料金をもとにした当社調べの目安です。</p>
         </div>
@@ -808,7 +1113,7 @@
         <div class="container mx-auto px-6 max-w-6xl">
             <div class="text-center mb-12" data-aos="fade-up">
                 <span class="label-tag text-gray-400 block mb-3">WHY SO COST-EFFECTIVE?</span>
-                <h2 class="text-2xl md:text-4xl font-bold text-fukuya-dark mb-4" style="letter-spacing:0.06em">圧倒的コスパを実現する<span style="color:#9a8060"> 3つの理由</span></h2>
+                <h2 class="text-2xl md:text-4xl font-bold text-fukuya-dark mb-4" style="letter-spacing:0.06em"><span class="inline-block">圧倒的コスパを実現する</span> <span class="inline-block" style="color:#9a8060">3つの理由</span></h2>
                 <div class="w-10 h-px bg-gray-200 mx-auto mb-5"></div>
             </div>
 
@@ -818,10 +1123,10 @@
                 <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all border border-blue-100 flex flex-col" data-aos="fade-up" data-aos-delay="100">
                     <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center text-white text-2xl font-black mb-6 shadow-lg">AI</div>
                     <div class="inline-block bg-blue-50 text-fukuya-blue text-[10px] font-black px-3 py-1 rounded-full tracking-widest mb-4">REASON 01</div>
-                    <h3 class="font-black text-lg text-fukuya-dark mb-4 leading-snug">毎日AIを走らせる<br class="hidden md:inline">「根拠のあるSNS運用」</h3>
+                    <h3 class="font-black text-lg text-fukuya-dark mb-4 leading-snug"><span class="inline-block">毎日AIを走らせる</span><br class="hidden md:inline"><span class="inline-block">「根拠のあるSNS運用」</span></h3>
                     <p class="text-gray-600 leading-relaxed text-sm flex-grow">最新のAIツールを毎日稼働させ、市場動向・SNSアルゴリズムの変化・競合の動きを継続的に分析しています。「なんとなく良さそう」という感覚ではなく、データの根拠にもとづいた施策だけを実行。さらにAIによる制作の効率化が、この低価格の実現にも直結しています。</p>
                     <div class="mt-6 pt-4 border-t border-blue-50">
-                        <p class="text-fukuya-blue font-bold text-xs">💡 感覚ではなくデータで判断。分析結果は毎月のレポートで共有</p>
+                        <p class="text-fukuya-blue font-bold text-xs">💡 <span class="inline-block">感覚ではなくデータで判断。</span><span class="inline-block">分析結果は毎月のレポートで共有</span></p>
                     </div>
                 </div>
 
@@ -829,10 +1134,10 @@
                 <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all border border-orange-100 flex flex-col" data-aos="fade-up" data-aos-delay="200">
                     <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center text-white text-2xl font-black mb-6 shadow-lg">0</div>
                     <div class="inline-block bg-orange-50 text-fukuya-orange text-[10px] font-black px-3 py-1 rounded-full tracking-widest mb-4">REASON 02</div>
-                    <h3 class="font-black text-lg text-fukuya-dark mb-4 leading-snug">中間マージンと営業コストの<br class="hidden md:inline">「完全排除」</h3>
+                    <h3 class="font-black text-lg text-fukuya-dark mb-4 leading-snug"><span class="inline-block">中間マージンと営業コストの</span><br class="hidden md:inline"><span class="inline-block">「完全排除」</span></h3>
                     <p class="text-gray-600 leading-relaxed text-sm flex-grow">大手代理店やIT企業を通すと、多額の「営業マンの人件費」や「下請けへの外注費（中間マージン）」が上乗せされます。Fukuyaは専属の右腕として直接契約を結び、一貫してディレクションを行うため、いただいた費用の100%をお店の価値向上だけに使います。</p>
                     <div class="mt-6 pt-4 border-t border-orange-50">
-                        <p class="text-fukuya-orange font-bold text-xs">💰 コストの100%が「お店の価値向上」だけに充当</p>
+                        <p class="text-fukuya-orange font-bold text-xs">💰 <span class="inline-block">コストの100%が</span><span class="inline-block">「お店の価値向上」だけに充当</span></p>
                     </div>
                 </div>
 
@@ -840,10 +1145,10 @@
                 <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all border border-green-100 flex flex-col" data-aos="fade-up" data-aos-delay="300">
                     <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-700 rounded-2xl flex items-center justify-center text-white text-2xl font-black mb-6 shadow-lg">20<span class="text-sm">yr</span></div>
                     <div class="inline-block bg-green-50 text-green-700 text-[10px] font-black px-3 py-1 rounded-full tracking-widest mb-4">REASON 03</div>
-                    <h3 class="font-black text-lg text-fukuya-dark mb-4 leading-snug">20年の現場経験による<br class="hidden md:inline">「最短距離の施策」</h3>
+                    <h3 class="font-black text-lg text-fukuya-dark mb-4 leading-snug"><span class="inline-block">20年の現場経験による</span><br class="hidden md:inline"><span class="inline-block">「最短距離の施策」</span></h3>
                     <p class="text-gray-600 leading-relaxed text-sm flex-grow">ITの専門家が陥りがちな「飲食店の現場では絶対に回らない机上の空論」を提案することはありません。20年間、ランチの戦場やFL管理と向き合ってきたからこそ、お店の状況を瞬時に把握し、ヒアリングやリサーチにかかる無駄な時間を省いて最短で結果に繋げます。</p>
                     <div class="mt-6 pt-4 border-t border-green-50">
-                        <p class="text-green-700 font-bold text-xs">🎯 ヒアリング・調査の無駄を省き「即戦力」で拡大</p>
+                        <p class="text-green-700 font-bold text-xs">🎯 <span class="inline-block">ヒアリング・調査の無駄を省き</span><span class="inline-block">「即戦力」で拡大</span></p>
                     </div>
                 </div>
 
@@ -856,7 +1161,7 @@
         <div class="container mx-auto px-6 max-w-5xl">
             <div class="text-center mb-12" data-aos="fade-up">
                 <span class="label-tag text-gray-400 block mb-3">OUR VALUES</span>
-                <h2 class="text-2xl md:text-4xl font-bold text-fukuya-dark mb-4" style="letter-spacing:0.06em">Fukuyaが大切にしている、２つの「約束」</h2>
+                <h2 class="text-2xl md:text-4xl font-bold text-fukuya-dark mb-4" style="letter-spacing:0.06em"><span class="inline-block">Fukuyaが大切にしている、</span><span class="inline-block">２つの「約束」</span></h2>
                 <div class="w-10 h-px bg-gray-200 mx-auto mb-5"></div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -865,15 +1170,15 @@
                     <h3 class="font-black text-xl text-fukuya-dark mb-3">依存させない仕組みづくり</h3>
                     <p class="text-gray-600 leading-relaxed text-sm mb-4">ノウハウ共有や現場へのミニ研修を通じて、スタッフ自身が自走できるよう、<strong class="text-fukuya-dark">お店に知識と仕組みを残す</strong>ことを最重視します。</p>
                     <div class="bg-blue-50 rounded-xl p-4">
-                        <p class="text-fukuya-blue font-bold text-sm">「解約後も、あなたのお店の力になれること」が、Fukuyaの誇りです。</p>
+                        <p class="text-fukuya-blue font-bold text-sm"><span class="inline-block">「解約後も、</span><span class="inline-block">あなたのお店の力になれること」が、</span><span class="inline-block">Fukuyaの誇りです。</span></p>
                     </div>
                 </div>
                 <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all border border-orange-100" data-aos="fade-up" data-aos-delay="200">
                     <div class="w-16 h-16 bg-orange-50 rounded-2xl flex items-center justify-center text-3xl mb-5">🚀</div>
-                    <h3 class="font-black text-xl text-fukuya-dark mb-3">信頼が深まれば、成果報酬連動型へ</h3>
+                    <h3 class="font-black text-xl text-fukuya-dark mb-3"><span class="inline-block">信頼が深まれば、</span><span class="inline-block">成果報酬連動型へ</span></h3>
                     <p class="text-gray-600 leading-relaxed text-sm mb-4">お互いの信頼関係が育った先に、<strong class="text-fukuya-dark">レベニューシェア型</strong>のパートナーシップという道もあります。お店が成長するほど私たちも喜ぶ、本当の意味での「右腕」関係を目指しています。</p>
                     <div class="bg-orange-50 rounded-xl p-4">
-                        <p class="text-fukuya-orange font-bold text-sm">「あなたのお店が繁盛することが、私たちの最大の報酬です。」</p>
+                        <p class="text-fukuya-orange font-bold text-sm"><span class="inline-block">「あなたのお店が繁盛することが、</span><span class="inline-block">私たちの最大の報酬です。」</span></p>
                     </div>
                 </div>
             </div>
@@ -971,6 +1276,34 @@
                 </details>
                 <details class="group border-b border-gray-200 py-5">
                     <summary class="flex items-center justify-between cursor-pointer font-bold text-sm md:text-base text-fukuya-dark gap-4">
+                        <span>個人経営・小規模の飲食店でも依頼できますか？</span>
+                        <span class="text-fukuya-orange flex-shrink-0 text-xl font-light transition-transform group-open:rotate-45">＋</span>
+                    </summary>
+                    <p class="mt-3 text-sm text-gray-500 font-light leading-relaxed">はい。1店舗だけのお店や、オーナー様お一人で切り盛りされているお店からのご相談を歓迎しています。Fukuyaの料金は、大手代理店には頼みづらい個人店・小規模店でも無理なく続けられる価格を前提に設計しています。まずは無料の店舗デジタル力診断からお気軽にどうぞ。</p>
+                </details>
+                <details class="group border-b border-gray-200 py-5">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-sm md:text-base text-fukuya-dark gap-4">
+                        <span>どんな業態の飲食店に対応していますか？</span>
+                        <span class="text-fukuya-orange flex-shrink-0 text-xl font-light transition-transform group-open:rotate-45">＋</span>
+                    </summary>
+                    <p class="mt-3 text-sm text-gray-500 font-light leading-relaxed">居酒屋・焼鳥・焼肉・寿司・和食・ラーメン・カフェ・バー・イタリアン・中華など、業態は問いません。代表は店長・エリアマネージャーとして複数業態の店舗運営を経験し、ロサンゼルスや中国での出店にも携わってきました。業態ごとの客層・客単価・オペレーションの違いを踏まえて施策をご提案します。</p>
+                </details>
+                <details class="group border-b border-gray-200 py-5">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-sm md:text-base text-fukuya-dark gap-4">
+                        <span>他のSNS運用代行会社との違いは何ですか？</span>
+                        <span class="text-fukuya-orange flex-shrink-0 text-xl font-light transition-transform group-open:rotate-45">＋</span>
+                    </summary>
+                    <p class="mt-3 text-sm text-gray-500 font-light leading-relaxed">大きく3つあります。(1) IT会社や広告代理店ではなく、飲食の現場を20年歩いた「現場出身」の代表が直接担当すること。(2) 毎日最新のAIで市場・アルゴリズム・競合を分析し、感覚ではなくデータにもとづいて施策を決めること。(3) 営業担当や下請けを介さない直接契約のため中間マージンがなく、一般的な相場より大幅に低い価格で提供できること。</p>
+                </details>
+                <details class="group border-b border-gray-200 py-5">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-sm md:text-base text-fukuya-dark gap-4">
+                        <span>効果が出るまで、どのくらいかかりますか？</span>
+                        <span class="text-fukuya-orange flex-shrink-0 text-xl font-light transition-transform group-open:rotate-45">＋</span>
+                    </summary>
+                    <p class="mt-3 text-sm text-gray-500 font-light leading-relaxed">SNSやMEOは積み上げ型のため、一般的に3〜6か月を目安にお考えください。初月はアカウント分析・プロフィール設計・投稿設計・Googleビジネスプロフィールの整備といった土台づくりに充て、2〜3か月目から毎月のレポートで数値の変化を追っていきます。成果を保証するものではありませんが、毎日AIで市場とアルゴリズムを分析し、根拠のある改善を積み重ねます。</p>
+                </details>
+                <details class="group border-b border-gray-200 py-5">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-sm md:text-base text-fukuya-dark gap-4">
                         <span>契約期間に縛りはありますか？</span>
                         <span class="text-fukuya-orange flex-shrink-0 text-xl font-light transition-transform group-open:rotate-45">＋</span>
                     </summary>
@@ -982,6 +1315,20 @@
                         <span class="text-fukuya-orange flex-shrink-0 text-xl font-light transition-transform group-open:rotate-45">＋</span>
                     </summary>
                     <p class="mt-3 text-sm text-gray-500 font-light leading-relaxed">スタンダードプランでは月1〜2回、プロがお店に伺って料理や店内の写真・動画を撮影します。オーナー様側での準備や手間は最小限で構いません。撮影の対応エリアは東京都内・神奈川・埼玉・千葉です（一部地域は要相談）。</p>
+                </details>
+                <details class="group border-b border-gray-200 py-5">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-sm md:text-base text-fukuya-dark gap-4">
+                        <span>撮影だけ、メニューだけなど単発でも依頼できますか？</span>
+                        <span class="text-fukuya-orange flex-shrink-0 text-xl font-light transition-transform group-open:rotate-45">＋</span>
+                    </summary>
+                    <p class="mt-3 text-sm text-gray-500 font-light leading-relaxed">メニュー作成（撮影込み・35,000円税抜）とホームページ（LP）制作は、月額プランに入らなくても単発でご依頼いただけます。店舗撮影のみのご依頼は、内容により個別にご相談ください。</p>
+                </details>
+                <details class="group border-b border-gray-200 py-5">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-sm md:text-base text-fukuya-dark gap-4">
+                        <span>Instagramのアカウントをまだ持っていなくても大丈夫ですか？</span>
+                        <span class="text-fukuya-orange flex-shrink-0 text-xl font-light transition-transform group-open:rotate-45">＋</span>
+                    </summary>
+                    <p class="mt-3 text-sm text-gray-500 font-light leading-relaxed">はい。アカウントの開設、プロフィールの設計、最初の投稿づくりからサポートします。Googleビジネスプロフィール（Googleマップ）が未整備の場合も、同時に整えていきます。</p>
                 </details>
                 <details class="group border-b border-gray-200 py-5">
                     <summary class="flex items-center justify-between cursor-pointer font-bold text-sm md:text-base text-fukuya-dark gap-4">
@@ -1009,7 +1356,7 @@
                         <span>アプリ開発もお願いできますか？</span>
                         <span class="text-fukuya-orange flex-shrink-0 text-xl font-light transition-transform group-open:rotate-45">＋</span>
                     </summary>
-                    <p class="mt-3 text-sm text-gray-500 font-light leading-relaxed">はい。予約管理・在庫管理・顧客台帳など、お店の業務に合わせたオーダーメイドのアプリ開発を承っています。初期開発費300,000円〜（税抜・内容により個別見積）、月額運用・保守15,000円〜（税抜）です。オンライン対応のため全国からご依頼いただけます。</p>
+                    <p class="mt-3 text-sm text-gray-500 font-light leading-relaxed">はい。予約管理・在庫管理・顧客台帳など、お店の業務に合わせたオーダーメイドのアプリ開発を承っています。初期開発費300,000円〜（税抜・内容により個別見積）、月額運用・保守15,000円〜（税抜）です。オンライン対応のため全国からご依頼いただけます。自社アプリ「スマ仕入」「スマ売上」「スマ棚」は現在クライアント店舗向けにモニター提供中で、一般提供は準備中です。</p>
                 </details>
             </div>
         </div>
@@ -1021,10 +1368,34 @@
         <div class="container mx-auto px-6 max-w-2xl relative z-10">
             <div class="text-center mb-12" data-aos="fade-up">
                 <span class="label-tag text-gray-400 block mb-4">CONTACT</span>
-                <h2 class="text-2xl md:text-4xl font-bold text-fukuya-dark mb-5" style="letter-spacing:0.06em">まずは、お店の悩みをお聞かせください。</h2>
+                <h2 class="text-2xl md:text-4xl font-bold text-fukuya-dark mb-5" style="letter-spacing:0.06em"><span class="inline-block">まずは、</span><span class="inline-block">お店の悩みを</span><span class="inline-block">お聞かせください。</span></h2>
                 <div class="w-10 h-px bg-gray-200 mx-auto mt-5 mb-6"></div>
-                <p class="text-sm md:text-base text-gray-500 font-light max-w-lg mx-auto leading-relaxed">今すぐの契約は必要ありません。「とりあえず話だけ聞きたい」「自分のお店に合うか分からない」——そんな段階でも、ぜひご連絡ください。</p>
+                <p class="text-sm md:text-base text-gray-500 font-light max-w-lg mx-auto leading-relaxed"><span class="inline-block">今すぐの契約は必要ありません。</span><span class="inline-block">「とりあえず話だけ聞きたい」</span><span class="inline-block">「自分のお店に合うか分からない」——</span><span class="inline-block">そんな段階でも、ぜひご連絡ください。</span></p>
             </div>
+            <!-- お問い合わせの流れ -->
+            <ol class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8" data-aos="fade-up" data-aos-delay="50">
+                <li class="flex sm:flex-col items-start gap-3 sm:gap-2 bg-white border border-gray-200 p-4">
+                    <span class="label-tag flex-shrink-0 mt-0.5 sm:mt-0" style="color:#c8a97e">STEP 1</span>
+                    <div>
+                        <p class="font-bold text-sm text-fukuya-dark">フォームを送信（約1分）</p>
+                        <p class="text-xs text-gray-500 font-light mt-1 leading-relaxed"><span class="inline-block">お悩み欄は一言でも大丈夫です。</span><span class="inline-block">メールでのご連絡でも構いません。</span></p>
+                    </div>
+                </li>
+                <li class="flex sm:flex-col items-start gap-3 sm:gap-2 bg-white border border-gray-200 p-4">
+                    <span class="label-tag flex-shrink-0 mt-0.5 sm:mt-0" style="color:#c8a97e">STEP 2</span>
+                    <div>
+                        <p class="font-bold text-sm text-fukuya-dark">1営業日以内にメールで返信</p>
+                        <p class="text-xs text-gray-500 font-light mt-1 leading-relaxed"><span class="inline-block">代表の寺島が直接お返事します。</span><span class="inline-block">営業電話はいたしません。</span></p>
+                    </div>
+                </li>
+                <li class="flex sm:flex-col items-start gap-3 sm:gap-2 bg-white border border-gray-200 p-4">
+                    <span class="label-tag flex-shrink-0 mt-0.5 sm:mt-0" style="color:#c8a97e">STEP 3</span>
+                    <div>
+                        <p class="font-bold text-sm text-fukuya-dark">無料相談・店舗デジタル力診断</p>
+                        <p class="text-xs text-gray-500 font-light mt-1 leading-relaxed"><span class="inline-block">オンラインで現状を整理し、</span><span class="inline-block">合うプランがあるかを率直にお伝えします。</span><span class="inline-block">ご契約はご納得いただけてからで構いません。</span></p>
+                    </div>
+                </li>
+            </ol>
             <div class="bg-white rounded-3xl shadow-2xl border border-blue-50 p-8 md:p-12" data-aos="fade-up" data-aos-delay="100">
                 <form method="POST" action="https://formsubmit.co/info@fukuya-fs.com">
                     <input type="hidden" name="_subject" value="【Fukuya】サイトからのお問い合わせ">
@@ -1045,6 +1416,7 @@
                                 <option value="plan-standard">スタンダードプランについて相談したい</option>
                                 <option value="spot-menu">メニュー作成について相談したい</option>
                                 <option value="spot-lp">ホームページ（LP）制作について相談したい</option>
+                                <option value="app">アプリ開発・自社アプリ（スマ仕入／スマ売上／スマ棚）について相談したい</option>
                                 <option value="other">その他・まずは話を聞きたい</option>
                             </select>
                         </div>
@@ -1067,14 +1439,27 @@
                             <input type="email" name="email" required placeholder="例）taro@example.com" class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 text-sm font-medium focus:border-fukuya-blue focus:outline-none transition">
                         </div>
                         <div>
+                            <label class="block text-sm font-black text-fukuya-dark mb-2">Fukuyaを知ったきっかけ <span class="text-gray-400 font-medium text-xs">（任意）</span></label>
+                            <select name="きっかけ" class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 text-sm font-medium focus:border-fukuya-blue focus:outline-none transition bg-white">
+                                <option value="">選択してください</option>
+                                <option value="AI検索（ChatGPT・Gemini・Perplexityなど）">AI検索（ChatGPT・Gemini・Perplexityなど）</option>
+                                <option value="Google・Yahoo!検索">Google・Yahoo!検索</option>
+                                <option value="Instagram">Instagram</option>
+                                <option value="X（旧Twitter）">X（旧Twitter）</option>
+                                <option value="note">note</option>
+                                <option value="知人・取引先からの紹介">知人・取引先からの紹介</option>
+                                <option value="その他">その他</option>
+                            </select>
+                        </div>
+                        <div>
                             <label class="block text-sm font-black text-fukuya-dark mb-2">お悩みや現状を自由にお書きください</label>
                             <textarea name="message" rows="5" placeholder="「SNSをやっているけど全然伸びない」「Instagramを始めたばかり」など、どんな小さなお悩みでも歓迎です。" class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 text-sm font-medium focus:border-fukuya-blue focus:outline-none transition resize-none"></textarea>
                         </div>
                         <button type="submit" class="w-full bg-fukuya-orange text-white px-8 py-5 rounded-full font-black text-lg hover:bg-orange-600 hover:shadow-[0_0_30px_rgba(234,88,12,0.4)] hover:-translate-y-1 transition-all flex items-center justify-center gap-2 group">
-                            お悩みを送信する（無料・返信は1営業日以内）
-                            <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                            <span class="flex flex-col items-center leading-tight"><span>お悩みを送信する</span><span class="text-xs font-medium opacity-90 mt-1 tracking-wide">無料・返信は1営業日以内</span></span>
+                            <svg class="w-5 h-5 flex-shrink-0 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                         </button>
-                        <p class="text-center text-gray-400 text-xs font-medium">✓ 無理な営業は一切いたしません　✓ 秘密厳守でご対応します</p>
+                        <p class="text-center text-gray-400 text-xs font-medium"><span class="inline-block">✓ 無理な営業は一切いたしません</span>　<span class="inline-block">✓ 秘密厳守でご対応します</span></p>
                         <p class="text-center text-gray-400 text-xs mt-2">送信いただいた内容は<a href="privacy.html" class="underline hover:text-fukuya-dark transition">プライバシーポリシー</a>に基づき取り扱います。</p>
                         <div class="text-center mt-4 pt-4 border-t border-gray-100">
                             <p class="text-gray-400 text-xs mb-2">フォームがご利用しづらい場合はメールでもご連絡いただけます</p>
@@ -1124,7 +1509,7 @@
             <div class="mt-8 pt-6 border-t border-gray-800">
                 <div class="flex flex-col md:flex-row items-center justify-between gap-3">
                     <div class="flex items-center gap-4">
-                        <p class="text-gray-600 text-xs">&copy; 2025 Fukuya Food &amp; SNS Consulting. All rights reserved.</p>
+                        <p class="text-gray-600 text-xs">&copy; 2025-2026 Fukuya Food &amp; SNS Consulting. All rights reserved.</p>
                         <a href="privacy.html" class="text-gray-500 text-xs hover:text-white transition whitespace-nowrap">プライバシーポリシー</a>
                     </div>
                     <a href="mailto:info@fukuya-fs.com?subject=%E3%80%90Fukuya%E3%80%91%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B" class="inline-flex items-center gap-2 text-gray-400 text-xs hover:text-white transition">
@@ -1144,6 +1529,12 @@
         </div>
     </footer>
 
+    <!-- スマホ用の固定CTA(ヒーローを過ぎたら表示、フォーム・フッター表示中は隠す) -->
+    <div id="mobile-cta" class="lg:hidden fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur border-t border-gray-200 px-4 pt-2.5 flex items-center gap-2 translate-y-full transition-transform duration-300" style="padding-bottom:calc(0.625rem + env(safe-area-inset-bottom))" aria-hidden="true">
+        <a href="#pricing" class="flex-1 text-center border border-fukuya-dark text-fukuya-dark py-3 text-xs font-bold tracking-widest whitespace-nowrap">料金を見る</a>
+        <a href="#contact" class="flex-[1.5] text-center bg-fukuya-orange text-white py-3 text-xs font-bold tracking-widest whitespace-nowrap">無料で相談する →</a>
+    </div>
+
     <script>
         // AOS初期化
         AOS.init({ once: true, duration: 700, easing: 'ease-out-cubic' });
@@ -1153,6 +1544,27 @@
         const mobileMenu = document.getElementById('mobile-menu');
         menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
         mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+        // スマホ用固定CTA
+        const cta = document.getElementById('mobile-cta');
+        let ctaBlocked = false;
+        const updateCta = () => {
+            const show = window.scrollY > 500 && !ctaBlocked;
+            cta.classList.toggle('translate-y-full', !show);
+            cta.setAttribute('aria-hidden', show ? 'false' : 'true');
+        };
+        const blockers = [document.getElementById('contact'), document.querySelector('footer')];
+        if ('IntersectionObserver' in window) {
+            const io = new IntersectionObserver(entries => {
+                ctaBlocked = blockers.some(el => el && el.__visible);
+                entries.forEach(e => { e.target.__visible = e.isIntersecting; });
+                ctaBlocked = blockers.some(el => el && el.__visible);
+                updateCta();
+            }, { rootMargin: '0px 0px -40% 0px' });
+            blockers.forEach(el => el && io.observe(el));
+        }
+        window.addEventListener('scroll', updateCta, { passive: true });
+        updateCta();
     </script>
 </body>
 </html>

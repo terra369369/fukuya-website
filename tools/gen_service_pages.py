@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """サービス別ページ(sns/lp/app/menu)を共通テンプレート+ページ別データから生成する。
 FAQPage JSON-LD は表示FAQと同じデータから自動生成するので不整合が起きない。"""
-import json, html
+import json, re, html
 
 OUT = r"C:\fukuya-website"
 BASE = "https://fukuya-fs.com"
@@ -54,6 +54,8 @@ def head(p):
         @media (max-width: 640px) {{ h2 {{ font-size: 1.45rem !important; line-height: 1.45 !important; }} h3 {{ font-size: 1.1rem !important; }} p {{ line-height: 1.8 !important; }} }}
         details summary::-webkit-details-marker {{ display: none; }}
         details summary {{ list-style: none; }}
+        h1, h2, h3 {{ text-wrap: balance; }}
+        @media (max-width: 640px) {{ .label-tag {{ letter-spacing: 0.18em; }} }}
     </style>
 {ld_html}
 </head>'''
@@ -155,14 +157,20 @@ def features(p):
         </div>
     </section>'''
 
+PHRASE_OVERRIDE = {"SNSコンサルティング会社": ["SNSコンサルティング", "会社"], "運用代行まで依頼した場合": ["運用代行まで", "依頼した場合"], "更新作業込みの運用": ["更新作業込みの", "運用"]}
+def phrases(label):
+    """価格表のラベルを文節単位(inline-block)に分割し、スマホで単語の途中で折り返さないようにする"""
+    parts = PHRASE_OVERRIDE.get(label) or [x for x in re.split(r"(?<=・)|(?=（)", label) if x]
+    return "".join(f'<span class="inline-block">{x}</span>' for x in parts)
+
 def compare(title, sub, rows, card, badge_label="FUKUYA"):
     row_html = ""
     for i, (lab, val, note) in enumerate(rows):
         border = "" if i == len(rows) - 1 else " border-b border-gray-200"
-        v = f'<span class="text-sm text-gray-500">{val}</span>' + (f'<span class="block text-[10px] text-gray-400 font-light">{note}</span>' if note else "")
+        v = f'<span class="text-sm text-gray-500 whitespace-nowrap">{val}</span>' + (f'<span class="block text-[10px] text-gray-400 font-light">{note}</span>' if note else "")
         row_html += f'''
                     <li class="flex items-baseline justify-between gap-4 py-3{border}">
-                        <span class="text-sm text-gray-600 font-light flex-shrink-0">{lab}</span>
+                        <span class="text-sm text-gray-600 font-light">{phrases(lab)}</span>
                         <span class="text-right">{v}</span>
                     </li>'''
     items = "".join(f'<li class="flex items-start gap-3">{CHECK}<span class="text-gray-300 font-light">{i}</span></li>' for i in card["items"])
@@ -258,7 +266,7 @@ def cta(p):
             <span class="label-tag block mb-4" style="color:#c8a97e">CONTACT</span>
             <h2 class="text-2xl md:text-3xl font-bold mb-5">{p["cta_title"]}</h2>
             <p class="text-sm text-gray-300 font-light leading-relaxed mb-8 max-w-xl mx-auto">今すぐの契約は必要ありません。「とりあえず話だけ聞きたい」「自分のお店に合うか分からない」——そんな段階でも、ぜひご連絡ください。返信は1営業日以内です。</p>
-            <a href="index.html#contact" class="inline-flex items-center justify-center gap-2 bg-fukuya-orange text-white px-10 py-4 font-medium tracking-widest hover:bg-fukuya-accent transition-all text-sm">無料相談・お問い合わせフォームへ →</a>
+            <a href="index.html#contact" class="inline-flex w-full sm:w-auto items-center justify-center gap-2 bg-fukuya-orange text-white px-6 sm:px-10 py-4 font-medium tracking-wider sm:tracking-widest hover:bg-fukuya-accent transition-all text-sm"><span class="inline-block">無料相談・</span><span class="inline-block">お問い合わせフォームへ →</span></a>
             <p class="mt-6 text-xs text-gray-500">メールでも：<a href="mailto:info@fukuya-fs.com" class="underline hover:text-white transition">info@fukuya-fs.com</a></p>
         </div>
     </section>'''
@@ -276,7 +284,7 @@ def footer():
                 <nav class="flex items-center gap-4 flex-wrap justify-center">{links}<a href="index.html#faq" class="text-gray-400 text-xs hover:text-white transition">よくある質問</a><a href="privacy.html" class="text-gray-400 text-xs hover:text-white transition">プライバシーポリシー</a></nav>
             </div>
             <div class="mt-6 pt-5 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-3">
-                <p class="text-gray-600 text-xs">&copy; 2025 Fukuya Food &amp; SNS Consulting. All rights reserved.</p>
+                <p class="text-gray-600 text-xs">&copy; 2025-2026 Fukuya Food &amp; SNS Consulting. All rights reserved.</p>
                 <div class="flex items-center gap-5">
                     <a href="mailto:info@fukuya-fs.com" class="text-gray-400 text-xs hover:text-white transition">info@fukuya-fs.com</a>
                     <a href="https://x.com/terajima_fukuya" target="_blank" rel="noopener" class="text-gray-400 text-xs hover:text-white transition">𝕏 @terajima_fukuya</a>
