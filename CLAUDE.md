@@ -20,6 +20,7 @@ https://fukuya-fs.com — 飲食店専門のSNS・MEOコンサルティング「
 - `images/profile-avatar.png` — 代表プロフィール用の男性イラストアイコン(顔写真を使わない方針のため。336×336px、元画像1000pxはユーザーのDownloadsに)
 - `site.js` — 全ページ共通の小さなスクリプト(2026-11-24新設)。最初に着地したときの参照元ホスト名・`utm_source`・最初のページを sessionStorage に保持し、フォームの hidden 欄「流入元」に入れる(ChatGPT経由のリンクには `utm_source=chatgpt.com` が付く)。Cookie不使用。扱う情報を変えたら privacy.html も更新すること
 - `<32桁の英数字>.txt` — IndexNow の所有確認キー(公開前提の値。削除しないこと)。**本番反映後に `python tools/indexnow.py` を実行すると、Bing等へ更新を即時通知できる**(ChatGPTの検索は主にBingの索引を使うため、内容を更新したら毎回実行する)
+- **アクセス解析(2026-11-24導入):** Cloudflare Web Analytics のビーコン(`static.cloudflareinsights.com/beacon.min.js`)を全ページの `</body>` 直前に手動で入れている(本体はプロキシOFFのため自動挿入されない。トークンはゾーン共通で自社アプリと同じサイト枠に集計されるので、ダッシュボードでは Host=fukuya-fs.com で絞り込む)。Cookie不使用。ページを新設したら必ずビーコンも入れること。`<head>` の `msvalidate.01` は Bing Webmaster Tools の所有確認タグ(削除しない)
 - `robots.txt` / `sitemap.xml` — SEO用。ページを追加したらsitemap.xmlにも追記すること。robots.txtはAIクローラー(GPTBot等)を明示許可している
 - `llms.txt` — AI検索(LLM)向けの事業サマリー。**サービス内容・価格を変更したらこのファイルも必ず同期すること**
 
