@@ -293,6 +293,7 @@ def footer():
             </div>
         </div>
     </footer>
+    <script src="site.js" defer></script>
 </body>
 </html>
 '''

@@ -18,6 +18,8 @@ https://fukuya-fs.com — 飲食店専門のSNS・MEOコンサルティング「
 - `images/fukuya-logo.png` — ロゴ(168×168px。元の2048px版は必要ならユーザーに確認)
 - `images/ogp.png` — OGP画像(1200×630px)
 - `images/profile-avatar.png` — 代表プロフィール用の男性イラストアイコン(顔写真を使わない方針のため。336×336px、元画像1000pxはユーザーのDownloadsに)
+- `site.js` — 全ページ共通の小さなスクリプト(2026-11-24新設)。最初に着地したときの参照元ホスト名・`utm_source`・最初のページを sessionStorage に保持し、フォームの hidden 欄「流入元」に入れる(ChatGPT経由のリンクには `utm_source=chatgpt.com` が付く)。Cookie不使用。扱う情報を変えたら privacy.html も更新すること
+- `<32桁の英数字>.txt` — IndexNow の所有確認キー(公開前提の値。削除しないこと)。**本番反映後に `python tools/indexnow.py` を実行すると、Bing等へ更新を即時通知できる**(ChatGPTの検索は主にBingの索引を使うため、内容を更新したら毎回実行する)
 - `robots.txt` / `sitemap.xml` — SEO用。ページを追加したらsitemap.xmlにも追記すること。robots.txtはAIクローラー(GPTBot等)を明示許可している
 - `llms.txt` — AI検索(LLM)向けの事業サマリー。**サービス内容・価格を変更したらこのファイルも必ず同期すること**
 
@@ -49,7 +51,7 @@ https://fukuya-fs.com — 飲食店専門のSNS・MEOコンサルティング「
 - hidden フィールド: `_subject`(メール件名)/ `_next`(送信後リダイレクト先 = thanks.html)/ `_captcha=false` / `_template=table`
 - honeypot: `name="_honey"` の隠し入力欄(スパム対策)
 - 送信者メール欄は `name="email"` のままにする(FormSubmitが自動でReply-Toに設定する)
-- 項目順(=通知メールの表の順): category → 店舗名(必須) → エリア(必須) → name → email → きっかけ(任意。AI検索経由の流入を計測するため2026-10-22追加) → message。`_honey` はラベルなし・`style="display:none"` の単独input(2026-10-15スパム対策)
+- 項目順(=通知メールの表の順): category → 店舗名(必須) → エリア(必須) → name → email → きっかけ(任意。AI検索経由の流入を計測するため2026-10-22追加) → AIへの質問(任意。AIに何と聞いたかを集める。2026-11-24追加) → message → 流入元(hidden。`site.js` が自動入力)。`_honey` はラベルなし・`style="display:none"` の単独input(2026-10-15スパム対策)
 
 ※ 2026-07-20まではNetlify Formsを使用していたが、フォーム検出が無効でずっと不通だったことが判明し、GitHub Pages移行と同時にFormSubmitへ置き換えた。
 
